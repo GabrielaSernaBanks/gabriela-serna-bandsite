@@ -1,1 +1,16 @@
-@use './partials/variables'
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/typography' as *;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir; 
+}
+
+h1 {
+  font-family: Avenir;
+  font-size: 60px;
+  font-weight: 700;
+}
