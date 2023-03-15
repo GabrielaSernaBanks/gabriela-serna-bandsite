@@ -1,1 +1,4 @@
 .DS_store
+
+#Ignore scss map files
+    *.css.map
