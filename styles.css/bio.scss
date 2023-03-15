@@ -1,16 +1,35 @@
-@use './partials/variables' as *;
-@use './partials/mixins' as *;
-@use './partials/typography' as *;
-
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: Avenir; 
+  box-sizing: border-box;
 }
 
-h1 {
-  font-family: Avenir;
-  font-size: 60px;
-  font-weight: 700;
+.nav__container {
+  border: 2px solid red;
 }
+
+@use "./partials/variables" as *;
+
+
+.nav__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color-black;
+
+}
+
+.nav__logo {
+  width: 40%;  
+  height: 40px;
+  padding-top: 20px;
+
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+}
+
