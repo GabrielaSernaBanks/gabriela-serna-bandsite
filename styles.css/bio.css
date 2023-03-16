@@ -1,34 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .nav__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #323232;
 }
 
-.nav__logo-container{
-  height: 60px;
+.nav__logo-container {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  padding-top: 20px;
 }
 
 .nav__logo {
-  height: 40px;
-  padding-top: 20px;
+  height: 50px;
+}
+
+.nav__link-container {
+  height: 50px;
+  width: 100%;
 }
 
 .nav__links {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .nav__link {
-  padding-left: 80px;
+  display: flex;
   color: aliceblue;
 }
 
-.hero-container {
+.hero__container {
   background-image: url(../assets/Images/hero-bio.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
   background-position: center;
-
+  background-repeat: no-repeat;
 }
 
-/*# sourceMappingURL=bio.css.map */
+.hero__title {
+  position: relative;
+  top: 160px;
+  left: 40px;
+  color: white;
+}
+
+.bio__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bio__image {
+  width: 90%;
+  padding: 0 35px 0 35px;
+}
+
+.bio__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images__container {
+  background-color: #FAFAFA;
+}
+
+.images__item {
+  width: 90%;
+}
+
+footer {
+  background-color: #323232;
+  color: #FFFFFF;
+}/*# sourceMappingURL=bio.css.map */
