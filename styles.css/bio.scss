@@ -10,37 +10,34 @@ html, body {
   background-color: $primary-color-black;
 }
 
-.nav__logo-container {
+.nav__logo {
   display: flex;
   justify-content: center;
-  // width: 100%;  
-  height: 50px;
+  width: 100%;  
+  height: 30px;
   padding-top: 20px;
 }
 
-.nav__logo {
-  height: 50px;
-}
-
-.nav__link-container {
-  height: 50px;
-  width:100%;
+.nav__logo-image {
+  height: 25px;
 }
 
 .nav__links {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: wrap;
+  justify-content: space-evenly;
 }
 
 .nav__link {
-  display: flex;
+  list-style: none;
   color: aliceblue;
 }
 
+
+
 .hero__container {
   background-image: url(../assets/Images/hero-bio.jpg);
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -70,9 +67,6 @@ html, body {
   flex-wrap: wrap;
 }
 
-.bio__band-name {
-
-}
 
 .images__container {
   background-color: $secondary-color-alabaster;
