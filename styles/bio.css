@@ -4,6 +4,12 @@ html, body {
   box-sizing: border-box;
 }
 
+.title {
+  font-family: "avenir";
+  font-weight: 700;
+  font-size: 28px;
+}
+
 .nav__container {
   background-color: #323232;
 }
@@ -25,6 +31,7 @@ html, body {
   justify-content: space-evenly;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+  margin-bottom: 0;
 }
 
 .nav__link {
@@ -58,6 +65,7 @@ html, body {
   padding-left: 16px;
   color: white;
   font-size: 28px;
+  margin: 0;
 }
 
 .bio__container {
@@ -65,12 +73,6 @@ html, body {
   flex-wrap: wrap;
   padding-left: 16px;
   padding-right: 16px;
-}
-
-.bio__title {
-  font-family: "avenir";
-  font-weight: 700;
-  font-size: 28px;
 }
 
 .bio__image {
@@ -104,13 +106,6 @@ html, body {
   padding-bottom: 16px;
 }
 
-.images__title {
-  font-family: "avenir";
-  font-weight: 700;
-  font-size: 28px;
-  padding-top: 24px;
-}
-
 .images__item {
   padding-bottom: 16px;
   width: 100%;
@@ -124,12 +119,6 @@ footer {
   padding-top: 10px;
   padding-bottom: 24px;
   line-height: 20px;
-}
-
-.footer__title {
-  font-family: "avenir";
-  font-weight: 700;
-  font-size: 30px;
 }
 
 .icons__container {
