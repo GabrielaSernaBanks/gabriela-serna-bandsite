@@ -14,7 +14,6 @@ html, body {
   display: flex;
   justify-content: center;
   width: 100%;  
-  height: 30px;
   padding-top: 20px;
 }
 
@@ -24,7 +23,7 @@ html, body {
 
 .nav__links {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
   padding-inline-start: 0;
 }
@@ -39,7 +38,7 @@ html, body {
 }
 
 .nav__link--selected {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid white;
 }
 
 
@@ -51,25 +50,25 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 0;
-
 }
 
 .hero__title {
   position: relative;
-  top: 160px;
-  left: 40px;
+  top: 100px;
+  left: 20px;
   color: white;
+  font-size: 35px;
   }
 
 .bio__container {
   display: flex;
   flex-wrap: wrap; 
-  // justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bio__image {
-  width: 90%;
-  padding: 0 35px 0 35px;
+  width: 100%;
 }
 
 .bio__info {
