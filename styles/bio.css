@@ -50,7 +50,22 @@ html, body {
   border-bottom: 0.1875rem solid white;
 }
 
-.hero__container {
+@font-face {
+  font-family: "avenir";
+  src: url(assets/Fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "avenir";
+  src: url(assets/Fonts/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "avenir";
+  src: url(assets/Fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+.hero {
   background-image: url(../assets/Images/hero-bio.jpg);
   height: 250px;
   width: 100%;
@@ -58,7 +73,6 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .hero__title {
   font-family: "avenir";
   padding-top: 110px;
@@ -69,46 +83,30 @@ html, body {
 }
 
 .bio {
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 16px;
   padding-right: 16px;
 }
-
 .bio__image {
   width: 100%;
 }
-
 .bio__info {
+  display: flex;
+  flex-wrap: wrap;
   font-family: "avenir";
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
 }
-
 .bio__band-name {
   font-family: "avenir";
   font-size: 16px;
   font-weight: 500;
   margin: 0;
 }
-
 .bio__band-description {
   font-family: "avenir";
   font-size: 16px;
   line-height: 22px;
-}
-
-.images__container {
-  background-color: #FAFAFA;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
-}
-
-.images__item {
-  padding-bottom: 16px;
-  width: 100%;
 }
 
 footer {
