@@ -10,8 +10,15 @@ html, body {
   font-size: 28px;
 }
 
-.nav__container {
+.nav {
+  display: flex;
+  flex-direction: column;
   background-color: #323232;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+  }
 }
 
 .nav__logo {
@@ -28,7 +35,6 @@ html, body {
 .nav__links {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
   margin-bottom: 0;
@@ -68,7 +74,7 @@ html, body {
   margin: 0;
 }
 
-.bio__container {
+.bio {
   display: flex;
   flex-wrap: wrap;
   padding-left: 16px;
@@ -127,7 +133,6 @@ footer {
 }
 
 .icons__images {
-  height: 26px;
   padding-right: 40px;
   padding-bottom: 16px;
 }
@@ -138,21 +143,21 @@ footer {
 
 .contacts__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
 }
 
 .contacts__info {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .copyright__container {
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 
 .copyright__logo-image {
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 
 .copyright__info {

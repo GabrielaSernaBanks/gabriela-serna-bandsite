@@ -1,0 +1,61 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'avenir';
+  font-weight: 700;
+  font-size: 28px;
+}
+
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color-black;
+
+  @include tablet {
+    flex-direction: row;
+}
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+  padding-top: 20px;
+}
+
+.nav__logo-image {
+  height: 20px;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-evenly;
+  padding-inline-start: 0;
+  margin-bottom: 0;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  color: aliceblue;
+  width: 50%;
+  font-family: 'avenir';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav__link--selected {
+  border-bottom: 3px solid white;
+}
