@@ -79,7 +79,6 @@ html, body {
   padding-left: 16px;
   color: white;
   font-size: 28px;
-  margin: 0;
 }
 
 .bio {
@@ -109,6 +108,21 @@ html, body {
   line-height: 22px;
 }
 
+.gallery {
+  background-color: #FAFAFA;
+  padding: 1rem;
+}
+.gallery__items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gallery__item {
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 1rem;
+}
+
 footer {
   background-color: #323232;
   color: #FFFFFF;
@@ -118,41 +132,34 @@ footer {
   padding-bottom: 24px;
   line-height: 20px;
 }
-
-.icons__container {
+footer_socials {
   display: flex;
   flex-direction: row;
 }
-
-.icons__images {
+footer__social {
+  height: 40%;
   padding-right: 40px;
   padding-bottom: 16px;
 }
-
-.contacts__container {
+footer__contacts {
   font-family: "avenir";
 }
-
-.contacts__title {
+footer__contact {
   font-weight: 600;
   font-size: 1rem;
   margin: 0;
 }
-
-.contacts__info {
+footer__contact-info {
   font-weight: 400;
   font-size: 1rem;
 }
-
-.copyright__container {
+footer__copyright {
   padding-top: 1.5rem;
 }
-
-.copyright__logo-image {
+footer__copyright-image {
   padding-top: 1.5rem;
 }
-
-.copyright__info {
+footer__copyright-info {
   font-family: "avenir";
-  font-size: 12px;
+  font-size: 0.75rem;
 }/*# sourceMappingURL=bio.css.map */
