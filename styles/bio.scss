@@ -65,20 +65,32 @@
 
     @include tablet {
       flex-direction: row;
-      justify-content: space-between;
+      font-size: 14px;
     }
+
   }
   &__band-title {
     font-family: 'avenir';
     font-size: 16px;
     font-weight: 500;
+    padding-left: 10px;
     margin: 0;
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
   
   &__band-description {
     font-family: 'avenir';
     font-size: 16px;
     line-height: 22px;
+
+    @include tablet {
+      font-size: 14px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
 
@@ -90,12 +102,21 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @include tablet {
+      justify-content: space-between;      
+    }
   }
 
   &__item {
     width: 100%;
     overflow: auto;
     padding-bottom: 1rem;
+
+    @include tablet {
+      justify-content: space-between;
+      width: 30%;
+    }
   }
 }
 

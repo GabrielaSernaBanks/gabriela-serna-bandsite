@@ -192,19 +192,32 @@ html, body {
 @media screen and (min-width: 768px) {
   .bio__band {
     flex-direction: row;
-    justify-content: space-between;
+    font-size: 14px;
   }
 }
 .bio__band-title {
   font-family: "avenir";
   font-size: 16px;
   font-weight: 500;
+  padding-left: 10px;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .bio__band-title {
+    font-size: 24px;
+  }
 }
 .bio__band-description {
   font-family: "avenir";
   font-size: 16px;
   line-height: 22px;
+}
+@media screen and (min-width: 768px) {
+  .bio__band-description {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .gallery {
@@ -216,8 +229,19 @@ html, body {
   flex-wrap: wrap;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .gallery__items {
+    justify-content: space-between;
+  }
+}
 .gallery__item {
   width: 100%;
   overflow: auto;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    justify-content: space-between;
+    width: 30%;
+  }
 }/*# sourceMappingURL=bio.css.map */
