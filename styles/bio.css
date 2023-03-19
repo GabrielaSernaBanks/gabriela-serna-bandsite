@@ -7,7 +7,12 @@ html, body {
 .title {
   font-family: "avenir";
   font-weight: 700;
-  font-size: 28px;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 .nav {
@@ -142,23 +147,55 @@ html, body {
   font-size: 28px;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 60px;
+  }
+}
 
 .bio {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+@media screen and (min-width: 768px) {
+  .bio {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 .bio__image {
   width: 100%;
 }
-.bio__info {
+.bio__quote {
   display: flex;
   flex-wrap: wrap;
   font-family: "avenir";
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
 }
-.bio__band-name {
+@media screen and (min-width: 768px) {
+  .bio__quote {
+    display: flex;
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 44px;
+  }
+}
+.bio__quote--tablet {
+  font-size: 14px;
+}
+.bio__band {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .bio__band {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.bio__band-title {
   font-family: "avenir";
   font-size: 16px;
   font-weight: 500;

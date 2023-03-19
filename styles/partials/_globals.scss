@@ -11,7 +11,11 @@ html, body {
 .title {
   font-family: 'avenir';
   font-weight: 700;
-  font-size: 28px;
+  font-size: 10px;
+
+  @include tablet {
+    font-size: 36px;
+  }
 }
 
 .nav {
