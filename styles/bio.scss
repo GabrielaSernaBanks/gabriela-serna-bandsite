@@ -18,9 +18,9 @@
     padding-left: 16px;
     color: white;
     font-size: 28px;
+    margin: 0;
     }
 }
-
 
 .bio {
   padding-left: 16px;
@@ -54,7 +54,6 @@
   }
 }
 
-
 .gallery {
   background-color: $secondary-color-alabaster;
   padding: 1rem;
@@ -73,56 +72,6 @@
 }
 
 
-
-
-footer {
-  background-color: $primary-color-black;
-  color: $primary-color-white;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 10px;
-  padding-bottom: 24px;
-  line-height: 20px;
-
-  &_socials {
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__social {
-    height: 40%;
-    padding-right: 40px;
-    padding-bottom: 16px;
-  }
-
-  &__contacts {
-    font-family: 'avenir';
-  }
-
-  &__contact {
-    font-weight: 600;
-    font-size: 1rem;
-    margin: 0;
-  }
-
-  &__contact-info {
-    font-weight: 400;
-    font-size: 1rem;
-  }
-
-  &__copyright {
-    padding-top: 1.5rem;
-  }
-
-  &__copyright-image {
-    padding-top: 1.5rem;
-
-}
-  &__copyright-info {
-    font-family: 'avenir';
-    font-size: 0.75rem;
-  }
-}
 
 
 
