@@ -39,6 +39,10 @@ html, body {
     @include tablet {
       padding: 1.125rem;
     }
+
+    @include desktop {
+      padding-left: 80px;
+    }
   }
 
   &__logo-image {
@@ -72,6 +76,11 @@ html, body {
       padding-left: 1.875rem;
     }
 
+    @include desktop {
+      width: 5%;
+      font-size: 12px;
+      padding: 1rem;
+    }
   }
 
     &__link--selected {
