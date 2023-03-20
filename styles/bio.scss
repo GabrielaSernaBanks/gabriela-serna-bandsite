@@ -12,6 +12,28 @@
   background-position: center;
   background-repeat: no-repeat;
 
+
+  @include tablet {
+    height: 640px;
+  }
+
+  &__opacity {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    height: 251px;
+    z-index: 1;
+    background: rgba(0,0,0,.5);
+
+
+    @include tablet{
+      top: 59px;
+      height: 640px;
+    }
+
+  }
+
   &__title {
     font-family: 'avenir';
     padding-top: 110px;
@@ -22,6 +44,8 @@
     
     @include tablet {
       font-size: 60px;
+      padding-top: 300px;
+      padding-left: 30px;
     }
   }
 }
