@@ -117,7 +117,8 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .footer__contacts {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
 }
 .footer__contact {
@@ -132,13 +133,35 @@ html, body {
   font-weight: 500;
   margin: 0;
 }
+.footer__copyright-image {
+  padding-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright-image--visible-mobile {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__copyright-image--visible-mobile {
+    visibility: hidden;
+  }
+}
+.footer__copyright-image--visible-tabletdesktop {
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright-image--visible-tabletdesktop {
+    visibility: visible;
+  }
+}
 .footer__copyright-info {
   font-family: "avenir";
   font-size: 11px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright-info {
-    padding-left: 50px;
+    padding-left: 10px;
   }
 }
 

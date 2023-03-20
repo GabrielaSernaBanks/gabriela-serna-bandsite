@@ -122,7 +122,8 @@ html, body {
     justify-content: center;
 
     @include tablet {
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -141,20 +142,38 @@ html, body {
     margin: 0;
   }
 
-  // &__copyright {
-  //   padding-top: 1.5rem;
-  // }
+  &__copyright-image {  
+    padding-left: 10px;
+  }
 
-  // &__copyright-image {  
-  //   padding-top: 1.5rem;
+  &__copyright-image--visible-mobile {
+    @include tablet {
+      visibility: hidden    
+    }
 
-  // }
+    @include desktop {
+      visibility: hidden    
+    }
+  } 
+
+  &__copyright-image--visible-tabletdesktop {
+    visibility: hidden;
+
+    @include tablet {
+      visibility: visible;
+    }
+  }
   &__copyright-info {
     font-family: 'avenir';
     font-size: 11px;
+    padding-left: 10px;
 
     @include tablet {
-      padding-left: 50px;
+      padding-left: 10px;
     }
   }
 }
+
+
+
+
