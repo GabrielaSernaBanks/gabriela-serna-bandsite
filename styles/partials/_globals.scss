@@ -16,6 +16,9 @@ html, body {
   @include tablet {
     font-size: 36px;
   }
+
+  @include desktop {
+  }
 }
 
 .nav {
@@ -107,6 +110,10 @@ html, body {
     @include tablet {
       flex-direction: row;
     }
+
+    @include desktop {
+      padding-left: 80px;
+    }
   }
 
   &__socials {
@@ -117,6 +124,10 @@ html, body {
     @include tablet {
     display: flex;
     flex-direction: row;
+    }
+
+    @include desktop {
+      padding-left: 20px;
     }
   }
 
@@ -134,11 +145,21 @@ html, body {
       display: flex;
       flex-direction: row;
     }
+
+    @include desktop {
+      justify-content: start;
+      padding-left: 35px;
+    }
   }
 
   &__contact {
     margin: 0;
     padding: 10px;
+
+    @include desktop {
+      padding: 0 50px;
+      
+    }
   }
 
   &__contact-info {
@@ -153,6 +174,10 @@ html, body {
 
   &__copyright-image {  
     padding-left: 10px;
+
+    @include desktop {
+
+    }
   }
 
   &__copyright-image--visible-mobile {
@@ -171,6 +196,10 @@ html, body {
     @include tablet {
       visibility: visible;
     }
+
+    @include desktop{
+      padding-left: 500px;
+    }
   }
   &__copyright-info {
     font-family: 'avenir';
@@ -179,6 +208,10 @@ html, body {
 
     @include tablet {
       padding-left: 10px;
+    }
+
+    @include desktop {
+      padding-left: 80px;
     }
   }
 }

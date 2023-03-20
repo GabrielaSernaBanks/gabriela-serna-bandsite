@@ -32,6 +32,11 @@
       height: 640px;
     }
 
+    @include desktop {
+      top: 55px;
+      height: 641px;
+    }
+
   }
 
   &__title {
@@ -103,6 +108,11 @@
       font-size: 14px;
     }
 
+    @include desktop {
+      // margin: 0;
+      // padding: 0;
+    }
+
   }
   &__band-title {
     font-family: 'avenir';
@@ -113,6 +123,11 @@
 
     @include tablet {
       font-size: 24px;
+    }
+
+    @include desktop {
+      font-size: 20px;
+      padding-left: 80px;
     }
   }
   
@@ -126,12 +141,21 @@
       padding-left: 10px;
       padding-right: 10px;
     }
+
+    @include desktop {
+      padding: 0 70px;
+      // padding-right: 60px;
+    }
   }
 }
 
 .gallery {
   background-color: $secondary-color-alabaster;
   padding: 1rem;
+
+  @include desktop {
+    padding: 1rem 5rem;
+  }
 
   &__items {
     display: flex;
@@ -140,6 +164,10 @@
 
     @include tablet {
       justify-content: space-between;      
+    }
+
+    @include desktop {
+      justify-content: unset;
     }
   }
 
@@ -151,6 +179,11 @@
     @include tablet {
       justify-content: space-between;
       width: 30%;
+    }
+
+    @include desktop {
+      justify-content: unset;
+      padding: 10px;
     }
   }
 }
