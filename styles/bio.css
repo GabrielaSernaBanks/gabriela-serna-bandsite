@@ -7,7 +7,7 @@ html, body {
 .title {
   font-family: "avenir";
   font-weight: 700;
-  font-size: 0.625rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .title {
@@ -59,7 +59,7 @@ html, body {
 .nav__link {
   display: flex;
   justify-content: space-around;
-  color: aliceblue;
+  color: #FFFFFF;
   width: 100%;
   font-family: "avenir";
   font-weight: 400;
@@ -83,7 +83,7 @@ html, body {
   }
 }
 .nav__link--selected {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #FFFFFF;
 }
 
 .footer {
@@ -150,7 +150,7 @@ html, body {
 }
 .footer__contact {
   margin: 0;
-  padding: 0.625rem;
+  padding: 0 0.625rem;
 }
 @media screen and (min-width: 1280px) {
   .footer__contact {
@@ -331,7 +331,6 @@ html, body {
   font-family: "avenir";
   font-size: 1rem;
   font-weight: 500;
-  padding-left: 0.625rem;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -365,7 +364,7 @@ html, body {
 
 .gallery {
   background-color: #FAFAFA;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 @media screen and (min-width: 1280px) {
   .gallery {

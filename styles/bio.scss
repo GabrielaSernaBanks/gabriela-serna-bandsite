@@ -113,7 +113,6 @@
     font-family: 'avenir';
     font-size: 1rem;
     font-weight: 500;
-    padding-left: .625rem;
     margin: 0;
 
     @include tablet {
@@ -145,24 +144,24 @@
 
 .gallery {
   background-color: $secondary-color-alabaster;
-  padding: 1rem;
+  padding: .5rem 1rem;
 
-  @include desktop {
-    padding: 1rem 5rem;
-  }
+    @include desktop {
+      padding: 1rem 5rem;
+    }
 
   &__items {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 
-    @include tablet {
-      justify-content: space-between;      
-    }
+      @include tablet {
+        justify-content: space-between;      
+      }
 
-    @include desktop {
-      justify-content: unset;
-    }
+      @include desktop {
+        justify-content: unset;
+      }
   }
 
   &__item {
@@ -170,15 +169,15 @@
     overflow: auto;
     padding-bottom: 1rem;
 
-    @include tablet {
-      justify-content: space-between;
-      width: 30%;
-    }
+      @include tablet {
+        justify-content: space-between;
+        width: 30%;
+      }
 
-    @include desktop {
-      justify-content: unset;
-      padding: .625rem;
-    }
+      @include desktop {
+        justify-content: unset;
+        padding: .625rem;
+      }
   }
 }
 

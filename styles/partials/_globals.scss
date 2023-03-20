@@ -11,14 +11,14 @@ html, body {
 .title {
   font-family: 'avenir';
   font-weight: 700;
-  font-size: .625rem;
+  font-size: 1.5rem;
 
-  @include tablet {
-    font-size: 2.25rem
-  }
+    @include tablet {
+      font-size: 2.25rem;
+    }
 
-  @include desktop {
-  }
+    @include desktop {
+    }
 }
 
 .nav {
@@ -28,13 +28,13 @@ html, body {
   background-color: $primary-color-black;
   margin: 0;
 
-  @include tablet {
-    flex-direction: row;
-  }
+    @include tablet {
+      flex-direction: row;
+    }
 
-  @include desktop {
-    flex-direction: row;
-  }
+    @include desktop {
+      flex-direction: row;
+    }
 
   &__logo {
     padding-top: 1.25rem;
@@ -64,7 +64,7 @@ html, body {
   &__link {
     display: flex;
     justify-content: space-around;
-    color: aliceblue;
+    color: $primary-color-white;
     width: 100%;
     font-family: 'avenir';
     font-weight: 400;
@@ -87,7 +87,7 @@ html, body {
   }
 
     &__link--selected {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid $primary-color-white;
     }
 }
 
@@ -107,13 +107,13 @@ html, body {
     flex-direction: column;
     align-items: baseline;
 
-    @include tablet {
-      flex-direction: row;
-    }
+      @include tablet {
+        flex-direction: row;
+      }
 
-    @include desktop {
-      padding-left: 5rem;
-    }
+      @include desktop {
+        padding-left: 5rem;
+      }
   }
 
   &__socials {
@@ -121,14 +121,14 @@ html, body {
     padding-right: 2.5rem;
     padding-bottom: 1rem;
 
-    @include tablet {
-    display: flex;
-    flex-direction: row;
-    }
+      @include tablet {
+      display: flex;
+      flex-direction: row;
+      }
 
-    @include desktop {
-      padding-left: 1.25rem;
-    }
+      @include desktop {
+        padding-left: 1.25rem;
+      }
   }
 
   &__social {
@@ -141,24 +141,24 @@ html, body {
     flex-direction: column;
     justify-content: center;
 
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-    }
+      @include tablet {
+        display: flex;
+        flex-direction: row;
+      }
 
-    @include desktop {
-      justify-content: start;
-      padding-left: 2.1875rem;
-    }
+      @include desktop {
+        justify-content: start;
+        padding-left: 2.1875rem;
+      }
   }
 
   &__contact {
     margin: 0;
-    padding: .625rem;
+    padding: 0 .625rem;
 
-    @include desktop {
-      padding: 0 3.125rem;
-    }
+      @include desktop {
+        padding: 0 3.125rem;
+      }
   }
 
   &__contact-info {
@@ -176,38 +176,39 @@ html, body {
   }
 
   &__copyright-image--visible-mobile {
-    @include tablet {
-      visibility: hidden    
-    }
 
-    @include desktop {
-      visibility: hidden    
-    }
-  } 
+      @include tablet {
+        visibility: hidden    
+      }
+
+      @include desktop {
+        visibility: hidden    
+      }
+    } 
 
   &__copyright-image--visible-tabletdesktop {
     visibility: hidden;
 
-    @include tablet {
-      visibility: visible;
-    }
+      @include tablet {
+        visibility: visible;
+      }
 
-    @include desktop{
-      padding-left: 31.25rem;
-    }
+      @include desktop{
+        padding-left: 31.25rem;
+      }
   }
   &__copyright-info {
     font-family: 'avenir';
     font-size: .6875rem;
     padding-left: .625rem;
 
-    @include tablet {
-      padding-left: .625rem;
-    }
+      @include tablet {
+        padding-left: .625rem;
+      }
 
-    @include desktop {
-      padding-left: 5rem;
-    }
+      @include desktop {
+        padding-left: 5rem;
+      }
   }
 }
 
