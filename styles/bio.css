@@ -7,11 +7,11 @@ html, body {
 .title {
   font-family: "avenir";
   font-weight: 700;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 .nav {
@@ -41,7 +41,7 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .nav__logo {
-    padding-left: 80px;
+    padding-left: 5rem;
   }
 }
 .nav__logo-image {
@@ -78,7 +78,7 @@ html, body {
 @media screen and (min-width: 1280px) {
   .nav__link {
     width: 5%;
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 1rem;
   }
 }
@@ -90,11 +90,11 @@ html, body {
   background-color: #323232;
   color: #FFFFFF;
   font-family: "avenir";
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 10px;
-  padding-bottom: 24px;
-  line-height: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.25rem;
 }
 .footer__info {
   display: flex;
@@ -108,13 +108,13 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .footer__info {
-    padding-left: 80px;
+    padding-left: 5rem;
   }
 }
 .footer__socials {
   height: 40%;
-  padding-right: 40px;
-  padding-bottom: 16px;
+  padding-right: 2.5rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .footer__socials {
@@ -124,12 +124,12 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .footer__socials {
-    padding-left: 20px;
+    padding-left: 1.25rem;
   }
 }
 .footer__social {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .footer__contacts {
   display: flex;
@@ -145,16 +145,16 @@ html, body {
 @media screen and (min-width: 1280px) {
   .footer__contacts {
     justify-content: start;
-    padding-left: 35px;
+    padding-left: 2.1875rem;
   }
 }
 .footer__contact {
   margin: 0;
-  padding: 10px;
+  padding: 0.625rem;
 }
 @media screen and (min-width: 1280px) {
   .footer__contact {
-    padding: 0 50px;
+    padding: 0 3.125rem;
   }
 }
 .footer__contact-info {
@@ -166,7 +166,7 @@ html, body {
   margin: 0;
 }
 .footer__copyright-image {
-  padding-left: 10px;
+  padding-left: 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright-image--visible-mobile {
@@ -188,22 +188,22 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .footer__copyright-image--visible-tabletdesktop {
-    padding-left: 500px;
+    padding-left: 31.25rem;
   }
 }
 .footer__copyright-info {
   font-family: "avenir";
-  font-size: 11px;
-  padding-left: 10px;
+  font-size: 0.6875rem;
+  padding-left: 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright-info {
-    padding-left: 10px;
+    padding-left: 0.625rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__copyright-info {
-    padding-left: 80px;
+    padding-left: 5rem;
   }
 }
 
@@ -224,7 +224,7 @@ html, body {
 }
 .hero {
   background-image: url(../assets/Images/hero-bio.jpg);
-  height: 250px;
+  height: 15.625rem;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -232,54 +232,54 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 640px;
+    height: 40rem;
   }
 }
 .hero__opacity {
   position: absolute;
-  top: 68px;
+  top: 4.25rem;
   left: 0;
   width: 100%;
-  height: 251px;
+  height: 15.6875rem;
   z-index: 1;
   background: rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 768px) {
   .hero__opacity {
-    top: 59px;
-    height: 640px;
+    top: 3.6875rem;
+    height: 40rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__opacity {
-    top: 55px;
-    height: 641px;
+    top: 3.4375rem;
+    height: 40.0625rem;
   }
 }
 .hero__title {
   font-family: "avenir";
-  padding-top: 110px;
-  padding-left: 16px;
+  padding-top: 6.875rem;
+  padding-left: 1rem;
   color: white;
-  font-size: 28px;
+  font-size: 1.75rem;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 60px;
-    padding-top: 300px;
-    padding-left: 30px;
+    font-size: 3.75rem;
+    padding-top: 18.75rem;
+    padding-left: 1.875rem;
   }
 }
 
 .bio {
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .bio {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 4.375rem;
+    padding-right: 4.375rem;
   }
 }
 .bio__image {
@@ -288,34 +288,34 @@ html, body {
 @media screen and (min-width: 1280px) {
   .bio__image {
     width: 80%;
-    padding-left: 80px;
+    padding-left: 5rem;
   }
 }
 .bio__quote {
   display: flex;
   flex-wrap: wrap;
   font-family: "avenir";
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 1.375rem;
 }
 @media screen and (min-width: 768px) {
   .bio__quote {
     display: flex;
-    padding-left: 20px;
-    font-size: 24px;
-    line-height: 44px;
+    padding-left: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .bio__quote {
     padding: 0 6.25rem;
-    font-size: 20px;
-    line-height: 44px;
+    font-size: 1.25rem;
+    line-height: 2.75rem;
   }
 }
 .bio__quote--tablet {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .bio__band {
   display: flex;
@@ -324,42 +324,42 @@ html, body {
 @media screen and (min-width: 768px) {
   .bio__band {
     flex-direction: row;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 .bio__band-title {
   font-family: "avenir";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  padding-left: 10px;
+  padding-left: 0.625rem;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
   .bio__band-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .bio__band-title {
-    font-size: 20px;
-    padding-left: 80px;
+    font-size: 1.25rem;
+    padding-left: 5rem;
   }
 }
 .bio__band-description {
   font-family: "avenir";
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.375rem;
 }
 @media screen and (min-width: 768px) {
   .bio__band-description {
-    font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 0.875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .bio__band-description {
-    padding: 0 70px;
+    padding: 0 4.375rem;
   }
 }
 
@@ -401,6 +401,6 @@ html, body {
 @media screen and (min-width: 1280px) {
   .gallery__item {
     justify-content: unset;
-    padding: 10px;
+    padding: 0.625rem;
   }
 }/*# sourceMappingURL=bio.css.map */

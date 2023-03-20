@@ -11,10 +11,10 @@ html, body {
 .title {
   font-family: 'avenir';
   font-weight: 700;
-  font-size: 10px;
+  font-size: .625rem;
 
   @include tablet {
-    font-size: 36px;
+    font-size: 2.25rem
   }
 
   @include desktop {
@@ -44,7 +44,7 @@ html, body {
     }
 
     @include desktop {
-      padding-left: 80px;
+      padding-left: 5rem;
     }
   }
 
@@ -81,7 +81,7 @@ html, body {
 
     @include desktop {
       width: 5%;
-      font-size: 12px;
+      font-size: .75rem;
       padding: 1rem;
     }
   }
@@ -96,11 +96,11 @@ html, body {
   background-color: $primary-color-black;
   color: $primary-color-white;
   font-family: 'avenir';
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 10px;
-  padding-bottom: 24px;
-  line-height: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .625rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.25rem;
 
   &__info {
     display: flex;
@@ -112,14 +112,14 @@ html, body {
     }
 
     @include desktop {
-      padding-left: 80px;
+      padding-left: 5rem;
     }
   }
 
   &__socials {
     height: 40%;
-    padding-right: 40px;
-    padding-bottom: 16px;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
 
     @include tablet {
     display: flex;
@@ -127,13 +127,13 @@ html, body {
     }
 
     @include desktop {
-      padding-left: 20px;
+      padding-left: 1.25rem;
     }
   }
 
   &__social {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   &__contacts {
@@ -148,17 +148,16 @@ html, body {
 
     @include desktop {
       justify-content: start;
-      padding-left: 35px;
+      padding-left: 2.1875rem;
     }
   }
 
   &__contact {
     margin: 0;
-    padding: 10px;
+    padding: .625rem;
 
     @include desktop {
-      padding: 0 50px;
-      
+      padding: 0 3.125rem;
     }
   }
 
@@ -173,11 +172,7 @@ html, body {
   }
 
   &__copyright-image {  
-    padding-left: 10px;
-
-    @include desktop {
-
-    }
+    padding-left: .625rem;
   }
 
   &__copyright-image--visible-mobile {
@@ -198,20 +193,20 @@ html, body {
     }
 
     @include desktop{
-      padding-left: 500px;
+      padding-left: 31.25rem;
     }
   }
   &__copyright-info {
     font-family: 'avenir';
-    font-size: 11px;
-    padding-left: 10px;
+    font-size: .6875rem;
+    padding-left: .625rem;
 
     @include tablet {
-      padding-left: 10px;
+      padding-left: .625rem;
     }
 
     @include desktop {
-      padding-left: 80px;
+      padding-left: 5rem;
     }
   }
 }
