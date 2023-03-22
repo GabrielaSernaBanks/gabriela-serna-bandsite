@@ -2,3 +2,54 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 @use "./partials/typography" as *;
+
+.hero {
+  background-image: url(../assets/Images/hero-bio.jpg);
+  height: 15.625rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  @include tablet {
+    height: 40rem;
+  }
+
+  &__opacity {
+    position: absolute;
+    top: 4.25rem;
+    left: 0;
+    width: 100%;
+    height: 15.6875rem;
+    z-index: 1;
+    background: rgba(0,0,0,.5);
+
+
+    @include tablet{
+      top: 3.6875rem;
+      height: 40rem;
+    }
+
+    @include desktop {
+      top: 3.4375rem;
+      height: 40.0625rem;
+    }
+
+  }
+
+  &__title {
+    font-family: 'avenir';
+    padding-top: 6.875rem;
+    padding-left: 1rem;
+    color: white;
+    font-size: 1.75rem;
+    margin: 0;
+    
+    @include tablet {
+      font-size: 3.75rem;
+      padding-top: 18.75rem;
+      padding-left: 1.875rem;
+    }
+  }
+}

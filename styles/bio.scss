@@ -3,7 +3,6 @@
 @use "./partials/mixins" as *;
 @use "./partials/typography" as *;
 
-
 .hero {
   background-image: url(../assets/Images/hero-bio.jpg);
   height: 15.625rem;
@@ -185,39 +184,38 @@
 .comments {
   display: flex;
   flex-direction: column;
+
+  &__input-form {
+    display: flex;
+  }
+
+  &__avatar {
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    vertical-align: middle;
+  }
 }
 
-.comments__input-form {
+.userComments {
   display: flex;
-}
 
-.comments__avatar {
-  height:50px;
-  width:50px;
-  border-radius:50%;
-  vertical-align: middle;
-}
+  &__image {
+    background-color: gray;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    vertical-align: middle;
+  }
 
-.user-comments__image {
-  background-color: gray;
-  height:50px;
-  width:50px;
-  border-radius:50%;
-  vertical-align: middle;
-}
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.usersample {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.user-comment__detail {
-  display: flex;
-}
-
-.user-comments {
-  display: flex;
-  // flex-direction: column;
+  &__detail {
+    display: flex;
+  }
 }
 
 
