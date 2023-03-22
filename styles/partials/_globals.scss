@@ -10,7 +10,7 @@ html, body {
 
 .title {
   font-family: 'avenir';
-  font-weight: $avenirNextBold;
+  font-weight: 600;
   font-size: 1.5rem;
 
     @include tablet {
@@ -67,7 +67,7 @@ html, body {
     color: $primary-color-white;
     width: 100%;
     font-family: 'avenir';
-    font-weight: $avenirNextRegular;
+    font-weight: 400;
     font-size: 1.125rem;
     
     @include tablet {
