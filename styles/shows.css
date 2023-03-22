@@ -270,4 +270,18 @@ html, body {
     padding-top: 18.75rem;
     padding-left: 1.875rem;
   }
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
+}
+.shows__title {
+  font-size: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=shows.css.map */
