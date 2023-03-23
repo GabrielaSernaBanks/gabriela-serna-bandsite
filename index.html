@@ -16,8 +16,8 @@
       <nav class="nav">
           <a class="nav__logo" href="#"><img class="nav__logo-image" src="./assets/Logo/Logo-bandsite.svg" alt="logo for Bandsite"></a>
           <div class="nav__links">
-            <a class="nav__link nav__link--selected">Biography</a>
-            <a class="nav__link">Shows</a>
+            <a class="nav__link nav__link--selected" href="#">Biography</a>
+            <a class="nav__link" href="#">Shows</a>
           </div>
       </nav>
     </header>
@@ -58,19 +58,21 @@
     </section>
 
     <section class="comments">
-      <h2 class="comments__title">Join the Conversation</h2>
-      <section class="comments__input-form">
+      <h2 class="title">Join the Conversation</h2>
+      <div class="comments__container">
         <img class="comments__avatar" src="./assets/Images/Mohan-muruge.jpg" alt="Side photo of a fan">
-        <div class="comments__input-details">
-          <form action="">
-            <label for="name">Name</label><br>
-            <input type="text" id="fullName" name="name" value="Enter your name"><br>
-            <label for="comment">Comment</label><br>
-            <input type="text" id="newComment" name="comment" value="Add a new comment"><br><br>
-            <input type="submit" value="Comment">
-          </form>
-        </div>
-      </section>
+        <form class="comments__form">
+          <div class="comments__form-info">
+            <label for="name">Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+            <label for="comment">Comment</label>
+              <input type="text" id="newComment" name="comment" placeholder="Add a new comment">
+            
+          </div>
+        </form>
+      </div>
+      
+    </section>
 
       <section class="userComments">
         <img class="userComments__image" src="" alt="">

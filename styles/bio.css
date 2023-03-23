@@ -7,7 +7,7 @@ html, body {
 .title {
   font-family: "avenir";
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
   .title {
@@ -20,6 +20,7 @@ html, body {
   align-items: center;
   background-color: #323232;
   margin: 0;
+  height: 80px;
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -46,6 +47,7 @@ html, body {
 }
 .nav__logo-image {
   height: 1.125rem;
+  padding-bottom: 0.3125rem;
 }
 @media screen and (min-width: 768px) {
   .nav__logo-image {
@@ -64,6 +66,7 @@ html, body {
   font-family: "avenir";
   font-weight: 400;
   font-size: 1.125rem;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .nav__link {
@@ -83,7 +86,8 @@ html, body {
   }
 }
 .nav__link--selected {
-  border-bottom: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .footer {
@@ -224,7 +228,7 @@ html, body {
 }
 .hero {
   background-image: url(../assets/Images/hero-bio.jpg);
-  height: 15.625rem;
+  height: 15.5rem;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -237,7 +241,6 @@ html, body {
 }
 .hero__opacity {
   position: absolute;
-  top: 4.25rem;
   left: 0;
   width: 100%;
   height: 15.6875rem;
@@ -408,7 +411,7 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-.comments__input-form {
+.comments__container {
   display: flex;
 }
 .comments__avatar {
@@ -416,6 +419,14 @@ html, body {
   width: 50px;
   border-radius: 50%;
   vertical-align: middle;
+}
+.comments__form {
+  padding-left: 1rem;
+  width: 100%;
+}
+.comments__form-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .userComments {
