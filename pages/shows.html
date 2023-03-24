@@ -15,8 +15,8 @@
     <nav class="nav">
       <a class="nav__logo" href="#"><img class="nav__logo-image" src="../assets/Logo/Logo-bandsite.svg" alt="logo for Bandsite"></a>
       <div class="nav__links">
-        <a class="nav__link nav__link--selected">Biography</a>
-        <a class="nav__link">Shows</a>
+        <a class="nav__link nav__link--selected" href="../index.html">Biography</a>
+        <a class="nav__link" href="./shows.html">Shows</a>
         </div>
     </nav>
   </header>
@@ -30,21 +30,25 @@
 
   <section class="shows">
     <h2 class="shows__title">Shows</h2>
-    <div id="date-container" class="shows__date">
-      <p id="date-header" class="shows__subheading">DATE</p>
-      <p id="date" class="shows__date-info"></p>
+    <div id="shows-list" class="shows__list">
+      <div class="shows__container">
+        <div id="date-container" class="shows__date">
+          <p id="date-header" class="shows__subheading">DATE</p>
+          <p id="date" class="shows__date-info"></p>
+        </div>
+        <div id="venue-container" class="shows__venue">
+          <p id="venue-header" class="shows__subheading">VENUE</p>
+          <p id="venue" class="shows__venue-info"></p>
+        </div>
+        <div id="location-container" class="shows__location">
+          <p id="location-header" class="shows__subheading">LOCATION</p>
+          <p id="location" class="shows__location-info"></p>
+        </div>
+        <button id="shows-button" class="shows__button">BUY TICKETS</button>
+      </div>
     </div>
-    <div id="venue-container" class="shows__venue">
-      <p id="venue-header" class="shows__subheading">VENUE</p>
-      <p id="venue" class="shows__venue-info"></p>
-    </div>
-    <div id="location-container" class="shows__location">
-      <p id="location-header" class="shows__subheading">LOCATION</p>
-      <p id="location" class="shows__location-info"></p>
-    </div>
-    <button class="shows__button">BUY TICKETS</button>
+    
   </section>
-
 
   <footer class="footer">
     <div class="footer__info">

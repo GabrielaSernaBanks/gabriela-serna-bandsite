@@ -33,6 +33,11 @@ const shows=[
 },
 ]  
 
-for (i=0; i<shows.length; i++){
-  console.log(i)
+const showsList=document.querySelector('.shows__list')
+
+function displayShows(shows){
+  for (i=0; i<shows.length; i++){
+    const showsContainer=document.createElement('div')
+    showsContainer.classList.add(shows__container)
+  }
 }
