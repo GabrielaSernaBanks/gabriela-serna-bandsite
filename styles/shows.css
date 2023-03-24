@@ -279,8 +279,10 @@ html, body {
 .shows {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .shows__title {
+  font-family: "avenir";
   font-size: 1.75rem;
 }
 @media screen and (min-width: 768px) {
@@ -288,4 +290,19 @@ html, body {
     display: flex;
     flex-direction: column;
   }
+}
+.shows__subheading {
+  font-family: "avenir";
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #AFAFAF;
+}
+.shows__button {
+  border: none;
+  padding: 0.8rem;
+  color: white;
+  background-color: #323232;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
 }/*# sourceMappingURL=shows.css.map */

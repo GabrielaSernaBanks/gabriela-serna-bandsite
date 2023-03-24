@@ -56,8 +56,10 @@
 .shows {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 
   &__title {
+    font-family: 'avenir';
     font-size: 1.75rem;
   }
 
@@ -66,5 +68,20 @@
       flex-direction: column;
     }
   
+  &__subheading {
+    font-family: 'avenir';
+    font-size: .75rem;
+    font-weight: 600;
+    color: $primary-color-silver;
+  }
 
+  &__button {
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    background-color: $primary-color-black;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 1rem;
+    }
 }
