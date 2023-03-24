@@ -7,6 +7,7 @@
   <title>Bandsite Shows</title>
   <link rel="stylesheet" href="../styles/shows.css">
   <link rel="stylesheet" href="../styles/partials/">
+  <script defer src="../scripts/build-shows-page.js"></script>
 </head>
 
 <body>
@@ -28,20 +29,20 @@
   </section>
 
   <section class="shows">
-    <h3 class="shows__title">Shows</h3>
-    <div class="shows__date">
-      <p class="shows__subheading">DATE</p>
-      <p class="shows__info">Insert date</p>
+    <h2 class="shows__title">Shows</h2>
+    <div id="date-container" class="shows__date">
+      <p id="date-header" class="shows__subheading">DATE</p>
+      <p id="date" class="shows__date-info"></p>
     </div>
-    <div class="shows__venue">
-      <p class="shows__subheading">VENUE</p>
-      <p class="shows__info">Insert venue name</p>
+    <div id="venue-container" class="shows__venue">
+      <p id="venue-header" class="shows__subheading">VENUE</p>
+      <p id="venue" class="shows__venue-info">Insert venue name</p>
     </div>
-    <div class="shows__location">
-      <p class="shows__subheading">LOCATION</p>
-      <p class="shows__info">Insert location</p>
+    <div id="location-container" class="shows__location">
+      <p id="location-header" class="shows__subheading">LOCATION</p>
+      <p id="location" class="shows__location-info">Insert location</p>
     </div>
-    <button>BUY TICKETS</button>
+    <button class="shows__button">BUY TICKETS</button>
   </section>
 
 
