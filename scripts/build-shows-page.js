@@ -1,4 +1,16 @@
-// 
+//create a function that will render 
+//new comments on the page
+
+// const showsList = document.querySelector('#shows-list');
+// const showsEl = document.createElement('div');
+// showsEl.classList.add('shows__container');
+// showsList.appendChild(showsEl);
+// console.log(showsEl);
+
+function displayShowInfo (shows) {
+  const showsEl = document.createElement('div');
+  showsEl.classList.add('shows__container');
+}
 
 const shows=[
   {
@@ -31,13 +43,16 @@ const shows=[
   venue: "Press Club", 
   location: "San Francisco, CA"
 },
-]  
+];  
 
-const showsList=document.querySelector('.shows__list')
+renderShows();
 
-function displayShows(shows){
-  for (i=0; i<shows.length; i++){
-    const showsContainer=document.createElement('div')
-    showsContainer.classList.add(shows__container)
+// function displayShows(shows){
+//   for (i=0; i<shows.length; i++){
+//     showsEl.innerText = `${shows[i].date}: ${shows[i].venue}: ${shows[i].location}`
+//     showsEl.classList.add('shows__details');
+
+
+    }
   }
 }
