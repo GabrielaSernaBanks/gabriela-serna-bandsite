@@ -184,33 +184,65 @@
 .comments {
   display: flex;
   flex-direction: column;
+  padding-left: 0.5rem;
 
+
+  &__header {
+    font-size: 1.8rem;
+    font-family: 'avenir';
+  }
   &__container {
     display: flex;
   }
   
+  //need to add avatar placeholder with color-mercury
   &__avatar {
-    height:50px;
-    width:50px;
+    height:2.25rem;
+    width:2.25rem;
     border-radius:50%;
-    vertical-align: middle;
+    // vertical-align: middle;
   }
 
   &__form {
-    padding-left: 1rem;
-    width: 100%;
-  }
-
-  &__form-info {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 90%;
+    margin: 0;
   }
 
-  // &__user-input {
-  //   // display: flex;
-  //   // flex-direction: column;
-  //   // align-items: flex-end;
-  // }
+  &__title {
+    font-family: 'avenir';
+    font-size: .75rem;
+    font-weight: 600;
+    color: $primary-color-silver;    
+    padding: .25rem;
+  }
+  
+  &__fullName {
+    color: $primary-color-black;
+    height:2.25rem;
+    border-radius: 4px;
+    border: 1px solid $secondary-color-mercury;
+  }
+
+  &__newComment {
+    height: 4rem; 
+    border-radius: 4px;
+    border: 1px solid $secondary-color-mercury;
+    background-color: $secondary-color-alabaster;
+  }
+
+  &__button {
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    background-color: $primary-color-black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 1rem;
+  }
 }
 
 .userComments {
@@ -218,10 +250,10 @@
 
   &__image {
     background-color: gray;
-    height:50px;
-    width:50px;
+    height:2.25rem;
+    width:2.25rem;
     border-radius:50%;
-    vertical-align: middle;
+    // vertical-align: middle;
   }
 
   &__info {

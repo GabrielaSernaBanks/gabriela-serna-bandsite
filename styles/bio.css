@@ -410,23 +410,55 @@ html, body {
 .comments {
   display: flex;
   flex-direction: column;
+  padding-left: 0.5rem;
+}
+.comments__header {
+  font-size: 1.8rem;
+  font-family: "avenir";
 }
 .comments__container {
   display: flex;
 }
 .comments__avatar {
-  height: 50px;
-  width: 50px;
+  height: 2.25rem;
+  width: 2.25rem;
   border-radius: 50%;
-  vertical-align: middle;
 }
 .comments__form {
-  padding-left: 1rem;
-  width: 100%;
-}
-.comments__form-info {
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 90%;
+  margin: 0;
+}
+.comments__title {
+  font-family: "avenir";
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #AFAFAF;
+  padding: 0.25rem;
+}
+.comments__fullName {
+  color: #323232;
+  height: 2.25rem;
+  border-radius: 4px;
+  border: 1px solid #E1E1E1;
+}
+.comments__newComment {
+  height: 4rem;
+  border-radius: 4px;
+  border: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
+}
+.comments__button {
+  border: none;
+  padding: 0.8rem;
+  color: white;
+  background-color: #323232;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
 }
 
 .userComments {
@@ -434,10 +466,9 @@ html, body {
 }
 .userComments__image {
   background-color: gray;
-  height: 50px;
-  width: 50px;
+  height: 2.25rem;
+  width: 2.25rem;
   border-radius: 50%;
-  vertical-align: middle;
 }
 .userComments__info {
   display: flex;

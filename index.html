@@ -58,20 +58,17 @@
     </section>
 
     <section class="comments">
-      <h2 class="title">Join the Conversation</h2>
+      <h2 class="comments__header">Join the Conversation</h2>
       <div class="comments__container">
-        <img class="comments__avatar" src="./assets/Images/Mohan-muruge.jpg" alt="Side photo of a fan">
+        <img class="comments__avatar comments__avatar-placeholder" src="./assets/Images/Mohan-muruge.jpg" alt="Side photo of a fan">
         <form class="comments__form">
-          <div class="comments__form-info">
-            <label for="name">Name</label>
-              <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
-            <label for="comment">Comment</label>
-              <input type="text" id="newComment" name="comment" placeholder="Add a new comment">
-            
-          </div>
+            <label class="comments__title" for="name">NAME</label>
+              <input type="text" class="comments__fullName" id="fullName" name="fullName" placeholder="Enter your name">
+            <label class="comments__title" for="comment">COMMENT</label>
+              <input type="text" class="comments__newComment" id="newComment" name="comment" placeholder="Add a new comment">
+            <button type="submit" class="comments__button">COMMENT</button>
         </form>
       </div>
-      
     </section>
 
       <section class="userComments">
