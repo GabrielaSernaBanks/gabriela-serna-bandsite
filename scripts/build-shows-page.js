@@ -1,16 +1,4 @@
-//create a function that will render 
-//new comments on the page
 
-// const showsList = document.querySelector('#shows-list');
-// const showsEl = document.createElement('div');
-// showsEl.classList.add('shows__container');
-// showsList.appendChild(showsEl);
-// console.log(showsEl);
-
-function displayShowInfo (shows) {
-  const showsEl = document.createElement('div');
-  showsEl.classList.add('shows__container');
-}
 
 const shows=[
   {
@@ -45,7 +33,47 @@ const shows=[
 },
 ];  
 
-renderShows();
+
+function displayShowInfo (shows) {
+  const showInfo = document.createElement ('div');
+  showInfo.classList.add('shows__container');
+
+  const datesContainer = document.createElement ('div');
+  datesContainer.classList.add('shows__date');
+
+  const dateHeader = document.createElement ('p');
+  dateHeader.classList.add('date__subheading');
+  dateHeader.innerText('DATE');
+
+  const dateInfo = document.createElement ('p');
+  dateInfo.classList.add(shows__date-info);
+  datesContainer.appendChild(dateHeader);
+  datesContainer.appendChild(dateInfo);
+
+  const venueContainer = document.createElement ('div');
+  venueContainer.classList.add(shows__venue);
+
+  const venueHeader = document.createElement ('p');
+  venueHeader.classList.add(venue__subheading);
+
+  const venueInfo = document.createElement ('p');
+  venueInfo.classList.add('shows__venue-info')
+  venueContainer.appendChild(venueHeader);
+  venueContainer.appendChild(venueInfo);
+
+  const locationContainer = document.createElement ('div');
+  locationContainer.classList.add(shows__location);
+
+  const locationHeader = document.createElement ('p');
+  locationHeader.classList.add(location__subheading);
+
+  const locationInfo = document.createElement ('p');
+  locationInfo.classList.add('shows__location-info')
+  locationContainer.appendChild(locationHeader);
+  locationContainer.appendChild(locationInfo);
+}
+
+// renderShows();
 
 // function displayShows(shows){
 //   for (i=0; i<shows.length; i++){
@@ -53,6 +81,6 @@ renderShows();
 //     showsEl.classList.add('shows__details');
 
 
-    }
-  }
-}
+//     }
+//   }
+// }
