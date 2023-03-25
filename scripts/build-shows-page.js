@@ -71,9 +71,19 @@ function displayShowInfo (shows) {
   locationInfo.classList.add('shows__location-info')
   locationContainer.appendChild(locationHeader);
   locationContainer.appendChild(locationInfo);
+
+  const ticketButton = document.createElement ('button');
+  ticketButton.classList.add('shows__button');
+
+  showInfo.appendChild(datesContainer);
+  showInfo.appendChild(venueContainer);
+  showInfo.appendChild(locationContainer);
+
+
+  return showInfo;
 }
 
-// renderShows();
+
 
 // function displayShows(shows){
 //   for (i=0; i<shows.length; i++){
