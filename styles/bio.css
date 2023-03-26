@@ -136,6 +136,16 @@ html, body {
     padding-left: 5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer__title {
+    margin-left: -0.1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    margin-left: -2rem;
+  }
+}
 .footer__socials {
   height: 40%;
   padding-right: 2.5rem;

@@ -107,7 +107,6 @@ html, body {
   }
 
 
-
 .footer {
   background-color: $primary-color-black;
   color: $primary-color-white;
@@ -130,6 +129,16 @@ html, body {
 
       @include desktop {
         padding-left: 5rem;
+      }
+  }
+
+  &__title {
+      @include tablet{
+      margin-left: -.1rem;
+      }
+    
+      @include desktop{
+        margin-left: -2rem;
       }
   }
 
@@ -194,7 +203,6 @@ html, body {
   }
 
   &__copyright-image--visible-mobile {
-
       @include tablet {
         visibility: hidden    
       }
