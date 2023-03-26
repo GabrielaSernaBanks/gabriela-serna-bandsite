@@ -10,6 +10,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
 
   @include tablet {
     height: 40rem;
@@ -17,7 +18,7 @@
 
   &__opacity {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: absolute;
     // top: 4rem;
     left: 0;
@@ -45,6 +46,7 @@
     padding-left: 1rem;
     color: white;
     font-size: 1.5rem;
+    padding: 0;
     margin: 0;
     
     @include tablet {
@@ -53,12 +55,24 @@
       padding-left: 1.875rem;
     }
   }
+
+  &__album-title {
+    color: $primary-color-white;
+    font-family: 'avenir';
+    font-weight: 400;
+  }
+
+  &__soundcloud {
+    width: 80%;
+  }
 }
 
 .shows {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  font-family: 'avenir';
+
 
   &__title {
     font-family: 'avenir';
@@ -70,6 +84,12 @@
       flex-direction: column;
     }
   
+  &__container {
+    border-bottom: 1px solid $secondary-color-mercury; 
+    padding-bottom: .625rem;
+
+  }
+
   &__subheading {
     font-family: 'avenir';
     font-size: .75rem;
@@ -77,13 +97,19 @@
     color: $primary-color-silver;
   }
 
+  &__date-info {
+    font-weight: 700;
+  }
+
   &__button {
     border: none;
     padding: 0.8rem;
+    font-size: 1.125rem;
     color: white;
     background-color: $primary-color-black;
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     margin-top: 1rem;
+    width: 100%;
     }
 }

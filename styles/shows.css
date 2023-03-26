@@ -233,6 +233,7 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -241,7 +242,7 @@ html, body {
 }
 .hero__opacity {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   position: absolute;
   left: 0;
   width: 100%;
@@ -267,6 +268,7 @@ html, body {
   padding-left: 1rem;
   color: white;
   font-size: 1.5rem;
+  padding: 0;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -276,11 +278,20 @@ html, body {
     padding-left: 1.875rem;
   }
 }
+.hero__album-title {
+  color: #FFFFFF;
+  font-family: "avenir";
+  font-weight: 400;
+}
+.hero__soundcloud {
+  width: 80%;
+}
 
 .shows {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  font-family: "avenir";
 }
 .shows__title {
   font-family: "avenir";
@@ -292,18 +303,27 @@ html, body {
     flex-direction: column;
   }
 }
+.shows__container {
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 0.625rem;
+}
 .shows__subheading {
   font-family: "avenir";
   font-size: 0.75rem;
   font-weight: 600;
   color: #AFAFAF;
 }
+.shows__date-info {
+  font-weight: 700;
+}
 .shows__button {
   border: none;
   padding: 0.8rem;
+  font-size: 1.125rem;
   color: white;
   background-color: #323232;
-  border-radius: 2px;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   margin-top: 1rem;
+  width: 100%;
 }/*# sourceMappingURL=shows.css.map */
