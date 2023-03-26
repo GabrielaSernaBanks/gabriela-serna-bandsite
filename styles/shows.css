@@ -227,8 +227,8 @@ html, body {
   font-weight: 700;
 }
 .hero {
-  background-image: url(../assets/Images/hero-bio.jpg);
-  height: 15.625rem;
+  background-image: url(../assets/Images/hero-shows.jpg);
+  height: 20rem;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -242,7 +242,7 @@ html, body {
 }
 .hero__opacity {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   position: absolute;
   left: 0;
   width: 100%;
@@ -252,7 +252,6 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .hero__opacity {
-    top: 3.6875rem;
     height: 40rem;
   }
 }
@@ -261,6 +260,10 @@ html, body {
     top: 3.4375rem;
     height: 40.0625rem;
   }
+}
+.hero__header-container {
+  display: flex;
+  flex-direction: column;
 }
 .hero__title {
   font-family: "avenir";
@@ -273,9 +276,7 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 3.75rem;
-    padding-top: 18.75rem;
-    padding-left: 1.875rem;
+    font-size: 4rem;
   }
 }
 .hero__album-title {
@@ -283,8 +284,14 @@ html, body {
   font-family: "avenir";
   font-weight: 400;
 }
-.hero__soundcloud {
-  width: 80%;
+@media screen and (min-width: 768px) {
+  .hero__album-title {
+    font-size: 2rem;
+  }
+}
+.hero__tracklist {
+  width: 90%;
+  padding: 0.125rem;
 }
 
 .shows {
@@ -307,7 +314,36 @@ html, body {
   border-bottom: 1px solid #E1E1E1;
   padding-bottom: 0.625rem;
 }
+@media screen and (min-width: 768px) {
+  .shows__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .shows__subheading {
+  font-family: "avenir";
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #AFAFAF;
+}
+@media screen and (min-width: 768px) {
+  .shows__subheading {
+    visibility: hidden;
+  }
+}
+.shows__headings-container {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .shows__headings-container {
+    display: flex;
+  }
+}
+.shows__headings-container--shown {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 60px;
   font-family: "avenir";
   font-size: 0.75rem;
   font-weight: 600;
@@ -326,4 +362,9 @@ html, body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   margin-top: 1rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .shows__button {
+    width: 25%;
+  }
 }/*# sourceMappingURL=shows.css.map */

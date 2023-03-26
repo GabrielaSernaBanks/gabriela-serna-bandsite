@@ -4,8 +4,8 @@
 @use "./partials/typography" as *;
 
 .hero {
-  background-image: url(../assets/Images/hero-bio.jpg);
-  height: 15.625rem;
+  background-image: url(../assets/Images/hero-shows.jpg);
+  height: 20rem;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
 
   &__opacity {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: absolute;
     // top: 4rem;
     left: 0;
@@ -29,7 +29,7 @@
 
 
     @include tablet{
-      top: 3.6875rem;
+      // top: 2.6875rem;
       height: 40rem;
     }
 
@@ -39,6 +39,10 @@
     }
   }
 
+  &__header-container {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__title {
     font-family: 'avenir';
@@ -50,9 +54,9 @@
     margin: 0;
     
     @include tablet {
-      font-size: 3.75rem;
-      padding-top: 18.75rem;
-      padding-left: 1.875rem;
+      font-size: 4rem;
+      // padding-top: 18.75rem;
+      // padding-left: 1.875rem;
     }
   }
 
@@ -60,10 +64,15 @@
     color: $primary-color-white;
     font-family: 'avenir';
     font-weight: 400;
+
+    @include tablet {
+      font-size: 2rem;
+    }
   }
 
-  &__soundcloud {
-    width: 80%;
+  &__tracklist {
+    width: 90%;
+    padding: .125rem;
   }
 }
 
@@ -72,7 +81,6 @@
   flex-direction: column;
   padding: 1rem;
   font-family: 'avenir';
-
 
   &__title {
     font-family: 'avenir';
@@ -88,6 +96,11 @@
     border-bottom: 1px solid $secondary-color-mercury; 
     padding-bottom: .625rem;
 
+    @include tablet{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
 
   &__subheading {
@@ -95,6 +108,29 @@
     font-size: .75rem;
     font-weight: 600;
     color: $primary-color-silver;
+
+    @include tablet{
+      visibility: hidden;
+    }
+  }
+
+  &__headings-container {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__headings-container--shown{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 60px;
+    font-family: 'avenir';
+    font-size: .75rem;
+    font-weight: 600;
+    color: $primary-color-silver;
+
   }
 
   &__date-info {
@@ -111,5 +147,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     margin-top: 1rem;
     width: 100%;
+
+    @include tablet{
+      width: 25%;
+    }
     }
 }
