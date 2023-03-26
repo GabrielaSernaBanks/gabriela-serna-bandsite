@@ -421,7 +421,7 @@ html, body {
     align-items: center;
   }
 }
-.shows .shows__container:hover {
+.shows__container:hover {
   background-color: #E1E1E1;
 }
 .shows__subheading {

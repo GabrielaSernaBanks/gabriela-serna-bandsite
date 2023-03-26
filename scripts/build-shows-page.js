@@ -1,3 +1,4 @@
+//array of objects to be displayed on shows page
 const shows=[
   {
   date: "Mon Sept 06 2021",
@@ -31,6 +32,7 @@ const shows=[
 },
 ];  
 
+//display for shows in correct elements
 const showsList = document.getElementById('shows__list');
 
 function displayShowInfo(shows) {
