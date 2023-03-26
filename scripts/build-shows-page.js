@@ -91,13 +91,24 @@ function displayShowInfo(shows) {
     showInfo.appendChild(ticketButton);
 
     showsList.appendChild(showInfo);
+  
     }
 }
 
 displayShowInfo(shows)
 
 
+//gets all six shows and stores it in variable called 'showContainer'
+let showContainer = document.querySelectorAll(".shows__container")
 
-
-  
-
+//use the Array.from() method to convert the showContainer variable into an Array
+//apply a forEach() method to each item in the Array
+Array.from(showContainer).forEach(function(el) {
+  //add an eventListener and listens for a 'click'
+  el.addEventListener("click", (e) => {
+    //the target clicked is stored as a variable called 'showBackground'
+    //item clicked is one of the six showContainers 
+    let showBackground = e.currentTarget;
+    //once one of the showContainers is 'clicked' then the class "selected" is toggled 'on/off'
+    showBackground.classList.toggle("selected")
+  })});

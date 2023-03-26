@@ -487,4 +487,8 @@ html, body {
   .shows__button {
     width: 25%;
   }
+}
+
+.selected {
+  background-color: #E1E1E1;
 }/*# sourceMappingURL=shows.css.map */
