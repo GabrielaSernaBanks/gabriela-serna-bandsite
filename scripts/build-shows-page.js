@@ -33,6 +33,7 @@ const shows=[
 ];  
 
 //display for shows in correct elements
+//append the 'children' to the correct elements
 const showsList = document.getElementById('shows__list');
 
 function displayShowInfo(shows) {
