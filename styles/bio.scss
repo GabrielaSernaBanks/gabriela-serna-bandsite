@@ -16,6 +16,10 @@
     height: 27.5rem;
   }
 
+  @include desktop{
+    height: 40rem;
+  }
+
   &__opacity {
     position: absolute;
     left: 0;
@@ -31,8 +35,8 @@
     }
 
     @include desktop {
-      top: 3.4375rem;
-      height: 40.0625rem;
+      top: 4.95rem;
+      height: 40rem;
     }
 
   }
@@ -50,6 +54,11 @@
       padding-top: 10rem;
       padding-left: 1.875rem;
       margin-left: 1.2rem;
+    }
+
+    @include desktop{
+      margin-left: 5rem;
+      padding-top: 15rem;
     }
   }
 }
@@ -70,6 +79,12 @@
       justify-content: center;
       margin: 0 auto;
     }
+
+    @include desktop{
+      width: 75%;
+      display: flex;
+      margin: 0 auto;
+    }
   }
 
   &__image {
@@ -84,9 +99,7 @@
     }
 
     @include desktop {
-      // width: 80%;
-      height: 20;
-      padding-left: 5rem;
+      height: 25rem;
     }
   }
 
@@ -111,9 +124,9 @@
     }
 
     @include desktop {
-      padding: 0 6.25rem;
       font-size: 1.25rem;
       line-height: 2.75rem;
+      width: 68%;
     }
   }
 
@@ -154,7 +167,8 @@
 
     @include desktop {
       font-size: 1.25rem;
-      padding-left: 5rem;
+      margin-left: 8rem;
+      padding-top: 2rem;
     }
   }
   
@@ -243,6 +257,10 @@
       font-size: 2.25rem;
       margin-left: 1rem;
     }
+
+    @include desktop{
+      margin-left: 4rem;
+    }
   }
 
 
@@ -262,6 +280,7 @@
     @include desktop{
       padding-left: 14rem;
       padding-right: 14rem;
+      width: 35%;
     }
   }
   
@@ -342,7 +361,9 @@
       margin-bottom: 1rem;
     }
     @include desktop{
-      margin-left: 35rem;
+      width: 35%;
+      margin-top: 1.5rem;
+      margin-left: 15.5rem;
     }
   }
 }
@@ -359,6 +380,11 @@
     margin: 0 auto;
   }
 
+  @include desktop{
+    width: 35%;
+    margin: 0 auto;
+  }
+
   &__container{
 
     @include tablet {
@@ -367,8 +393,6 @@
     }
 
     @include desktop{
-      padding-left: 4rem;
-      padding-right: 4rem;
     }
   }
 
@@ -386,7 +410,6 @@
     }
 
     @include desktop{
-      margin-top: 1.6rem;
     }
   }
 
@@ -401,8 +424,9 @@
     }
 
     @include desktop{
-      padding-left: 6rem;
-      padding-right: 6rem;
+      display: flex;
+      justify-content: space-between;
+
     }
   }
   
@@ -418,6 +442,13 @@
       align-items: center;
       margin-top: -3rem;
     }
+
+    @include desktop{
+      display: flex;
+      width: 95%;
+      margin-top: -3rem;
+
+    }
   }
 
   &__name {
@@ -427,6 +458,11 @@
 
     @include tablet {
       margin-left: -1rem;
+    }
+
+    @include desktop{
+      margin-top: -3rem;
+      margin-right: -12rem;
     }
   }
 
@@ -440,7 +476,8 @@
     }
 
     @include desktop{
-      padding-left: 37rem;
+      margin-top: -3rem;
+      margin-right: -3.5rem;
     }
   }
 
@@ -465,7 +502,14 @@
 }
 
 .get {
-  margin-left: -.1rem;
+
+  @include tablet{
+    margin-left: -.1rem;
+  }
+
+  @include desktop{
+    margin-left: -2rem;
+  }
 }
 
 

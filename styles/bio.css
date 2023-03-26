@@ -15,6 +15,12 @@ html, body {
     margin-left: 1.75rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .title {
+    margin-left: 5rem;
+  }
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -98,6 +104,11 @@ html, body {
     line-height: 250%;
   }
 }
+@media screen and (min-width: 1280px) {
+  .active {
+    line-height: 350%;
+  }
+}
 
 .footer {
   background-color: #323232;
@@ -160,7 +171,7 @@ html, body {
 @media screen and (min-width: 1280px) {
   .footer__contacts {
     justify-content: start;
-    padding-left: 2.1875rem;
+    margin-left: 2rem;
   }
 }
 .footer__contact {
@@ -219,7 +230,7 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .footer__copyright-info {
-    padding-left: 5rem;
+    padding-left: 3.5rem;
   }
 }
 
@@ -251,6 +262,11 @@ html, body {
     height: 27.5rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 40rem;
+  }
+}
 .hero__opacity {
   position: absolute;
   left: 0;
@@ -266,8 +282,8 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .hero__opacity {
-    top: 3.4375rem;
-    height: 40.0625rem;
+    top: 4.95rem;
+    height: 40rem;
   }
 }
 .hero__title {
@@ -284,6 +300,12 @@ html, body {
     padding-top: 10rem;
     padding-left: 1.875rem;
     margin-left: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    margin-left: 5rem;
+    padding-top: 15rem;
   }
 }
 
@@ -305,6 +327,13 @@ html, body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1280px) {
+  .bio__details {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+  }
+}
 .bio__image {
   width: 100%;
   height: 11.875rem;
@@ -318,8 +347,7 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .bio__image {
-    height: 20;
-    padding-left: 5rem;
+    height: 25rem;
   }
 }
 .bio__quote {
@@ -339,9 +367,9 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .bio__quote {
-    padding: 0 6.25rem;
     font-size: 1.25rem;
     line-height: 2.75rem;
+    width: 68%;
   }
 }
 .bio__quote--tablet {
@@ -383,7 +411,8 @@ html, body {
 @media screen and (min-width: 1280px) {
   .bio__band-title {
     font-size: 1.25rem;
-    padding-left: 5rem;
+    margin-left: 8rem;
+    padding-top: 2rem;
   }
 }
 .bio__band-description {
@@ -476,6 +505,11 @@ html, body {
     margin-left: 1rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comments__header {
+    margin-left: 4rem;
+  }
+}
 .comments__container {
   display: flex;
   padding-left: 1rem;
@@ -494,6 +528,7 @@ html, body {
   .comments__container {
     padding-left: 14rem;
     padding-right: 14rem;
+    width: 35%;
   }
 }
 .comments__avatar {
@@ -574,7 +609,9 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .comments__button {
-    margin-left: 35rem;
+    width: 35%;
+    margin-top: 1.5rem;
+    margin-left: 15.5rem;
   }
 }
 
@@ -590,16 +627,16 @@ html, body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1280px) {
+  .userComments {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .userComments__container {
     display: flex;
     flex-direction: column;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .userComments__container {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 }
 .userComments__image {
@@ -616,11 +653,6 @@ html, body {
     height: 3rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  .userComments__image {
-    margin-top: 1.6rem;
-  }
-}
 .userComments__info {
   display: flex;
   flex-wrap: wrap;
@@ -634,8 +666,8 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .userComments__info {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    display: flex;
+    justify-content: space-between;
   }
 }
 .userComments__details {
@@ -652,6 +684,13 @@ html, body {
     margin-top: -3rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .userComments__details {
+    display: flex;
+    width: 95%;
+    margin-top: -3rem;
+  }
+}
 .userComments__name {
   font-weight: bold;
   padding: 0rem 0.625rem;
@@ -660,6 +699,12 @@ html, body {
 @media screen and (min-width: 768px) {
   .userComments__name {
     margin-left: -1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .userComments__name {
+    margin-top: -3rem;
+    margin-right: -12rem;
   }
 }
 .userComments__date {
@@ -674,7 +719,8 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .userComments__date {
-    padding-left: 37rem;
+    margin-top: -3rem;
+    margin-right: -3.5rem;
   }
 }
 .userComments__detail {
@@ -697,6 +743,13 @@ html, body {
   }
 }
 
-.get {
-  margin-left: -0.1rem;
+@media screen and (min-width: 768px) {
+  .get {
+    margin-left: -0.1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .get {
+    margin-left: -2rem;
+  }
 }/*# sourceMappingURL=bio.css.map */

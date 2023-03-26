@@ -15,6 +15,12 @@ html, body {
     margin-left: 1.75rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .title {
+    margin-left: 5rem;
+  }
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -98,6 +104,11 @@ html, body {
     line-height: 250%;
   }
 }
+@media screen and (min-width: 1280px) {
+  .active {
+    line-height: 350%;
+  }
+}
 
 .footer {
   background-color: #323232;
@@ -160,7 +171,7 @@ html, body {
 @media screen and (min-width: 1280px) {
   .footer__contacts {
     justify-content: start;
-    padding-left: 2.1875rem;
+    margin-left: 2rem;
   }
 }
 .footer__contact {
@@ -219,7 +230,7 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .footer__copyright-info {
-    padding-left: 5rem;
+    padding-left: 3.5rem;
   }
 }
 
@@ -252,6 +263,11 @@ html, body {
     height: 35rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 35rem;
+  }
+}
 .hero__opacity {
   display: flex;
   flex-direction: column;
@@ -272,13 +288,15 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 40.0625rem;
+    height: 35rem;
+    justify-content: space-between;
   }
 }
 .hero__header-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .hero__header-container {
@@ -287,7 +305,7 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .hero__header-container {
-    padding-right: 32rem;
+    width: 40%;
   }
 }
 .hero__header-container__soundcloud {
@@ -301,11 +319,30 @@ html, body {
   margin-bottom: 4rem;
   position: relative;
 }
+@media screen and (min-width: 1280px) {
+  .hero__header-container {
+    width: 40%;
+    margin-left: 4rem;
+  }
+}
 .hero .soundcloud_player {
   margin: 0 auto;
   display: flex;
   width: 87%;
   border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .hero .soundcloud_player {
+    width: 65%;
+    height: 10rem;
+    margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero .soundcloud_player {
+    width: 65%;
+    margin-right: 15rem;
+  }
 }
 .hero__title {
   font-family: "avenir";
@@ -374,6 +411,9 @@ html, body {
     align-items: center;
   }
 }
+.shows .shows__container:hover {
+  background-color: #E1E1E1;
+}
 .shows__subheading {
   font-family: "avenir";
   font-size: 0.75rem;
@@ -439,6 +479,13 @@ html, body {
   }
 }
 
-.get {
-  margin-left: -0.1rem;
+@media screen and (min-width: 768px) {
+  .get {
+    margin-left: -0.1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .get {
+    margin-left: -2rem;
+  }
 }/*# sourceMappingURL=shows.css.map */
