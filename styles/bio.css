@@ -283,6 +283,11 @@ html, body {
     padding: 1.5rem 1rem 1rem 1rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .bio__details {
+    padding: 0 2.5rem;
+  }
+}
 .bio__image {
   width: 100%;
   height: 11.875rem;
@@ -290,7 +295,7 @@ html, body {
 @media screen and (min-width: 768px) {
   .bio__image {
     width: 100%;
-    height: 20rem;
+    height: 24rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -309,10 +314,9 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .bio__quote {
-    display: flex;
-    padding-left: 1.25rem;
+    width: 100%;
     font-size: 1.5rem;
-    line-height: 2.75rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -324,6 +328,7 @@ html, body {
 }
 .bio__quote--tablet {
   font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .bio__band {
   display: flex;
@@ -333,6 +338,7 @@ html, body {
   .bio__band {
     flex-direction: row;
     font-size: 0.875rem;
+    padding: 1.5rem;
   }
 }
 .bio__band-title {
@@ -344,6 +350,8 @@ html, body {
 @media screen and (min-width: 768px) {
   .bio__band-title {
     font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -360,8 +368,10 @@ html, body {
 @media screen and (min-width: 768px) {
   .bio__band-description {
     font-size: 0.875rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    line-height: 1.375rem;
+    padding-right: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 0rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -373,6 +383,12 @@ html, body {
 .gallery {
   background-color: #FAFAFA;
   padding: 0.5rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   .gallery {
@@ -421,21 +437,45 @@ html, body {
   font-size: 1.8rem;
   font-family: "avenir";
 }
+@media screen and (min-width: 768px) {
+  .comments__header {
+    padding-left: 1rem;
+  }
+}
 .comments__container {
   display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-bottom: 1px solid #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .comments__container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__container {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
 }
 .comments__avatar {
   height: 2.25rem;
   width: 2.25rem;
   border-radius: 50%;
+  margin-top: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .comments__avatar {
+    margin-top: 1rem;
+  }
 }
 .comments__form {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
   padding-bottom: 0.625rem;
+  padding-left: 0.5rem;
   width: 90%;
   margin: 0;
 }
@@ -468,36 +508,95 @@ html, body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   margin-top: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .comments__button {
+    width: 25%;
+    margin-left: 29.37rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__button {
+    margin-left: 35rem;
+  }
+}
 
 .userComments {
   padding: 1rem;
   font-family: "avenir";
   font-size: 0.8125rem;
 }
+@media screen and (min-width: 768px) {
+  .userComments {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .userComments__container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
 .userComments__image {
   background-color: #E1E1E1;
   height: 2.25rem;
   width: 2.25rem;
   border-radius: 50%;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 1280px) {
+  .userComments__image {
+    margin-top: 1.6rem;
+  }
 }
 .userComments__info {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid #E1E1E1;
 }
+@media screen and (min-width: 1280px) {
+  .userComments__info {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
 .userComments__details {
   display: flex;
   flex-direction: row-reverse;
+  padding-top: 1rem;
 }
 .userComments__name {
   font-weight: bold;
   padding: 0rem 0.625rem;
+  margin-bottom: 0;
 }
 .userComments__date {
   padding-left: 3.75rem;
   color: #AFAFAF;
 }
+@media screen and (min-width: 768px) {
+  .userComments__date {
+    padding-left: 27rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .userComments__date {
+    padding-left: 37rem;
+  }
+}
 .userComments__detail {
   padding-left: 3.125rem;
-  margin: 0 auto;
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .userComments__detail {
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .userComments__detail {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
