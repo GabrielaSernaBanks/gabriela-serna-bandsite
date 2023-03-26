@@ -196,12 +196,10 @@
     border-bottom: 1px solid $secondary-color-mercury;
   }
   
-  //need to add avatar placeholder with color-mercury
   &__avatar {
     height:2.25rem;
     width:2.25rem;
     border-radius:50%;
-    // vertical-align: middle;
   }
 
   &__form {
@@ -227,6 +225,8 @@
     height:2.25rem;
     border-radius: 4px;
     border: 1px solid $secondary-color-mercury;
+    background-color: $secondary-color-alabaster;
+
   }
 
   &__newComment {

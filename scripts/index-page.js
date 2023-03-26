@@ -1,3 +1,4 @@
+//comments array being displayed on page
 let comments=[
   {
   name: "Connor Walton",
@@ -16,11 +17,12 @@ let comments=[
 }
 ]; 
 
-//renders the comments on the bio page//
-const commentContainer = document.getElementById('comment__container')
 
-function displayComments(comments){
-  for(i=0; i<comments.length; i++){
+//create the comments on the bio page//
+const commentContainer = document.getElementById('comment__container')
+function displayComments(array){
+  commentContainer.innerHTML = ""
+  for(i=0; i<array.length; i++){
 
     const userInfo = document.createElement ('div');
     userInfo.classList.add('userComments__info');
@@ -33,30 +35,27 @@ function displayComments(comments){
 
     const name = document.createElement ('p');
     name.classList.add('userComments__name');
-    name.innerText = comments[i].name;
+    name.innerText = array[i].name;
 
     const date = document.createElement ('p');
     date.classList.add('userComments__date');
-    date.innerText = comments[i].date;
+    date.innerText = array[i].date;
     details.appendChild(date);
     details.appendChild(name);
 
     const comment = document.createElement ('p');
     comment.classList.add('userComments__detail');
-    comment.innerText = comments[i].comment;
+    comment.innerText = array[i].comment;
 
     userInfo.appendChild(image);
     userInfo.appendChild(details);
     userInfo.appendChild(comment);
 
     commentContainer.appendChild(userInfo);
-
-
   }
 }
 
 displayComments(comments)
-
 
 //creates new comments in the bio page//
 const form = document.querySelector('.comments__form');
@@ -68,11 +67,11 @@ form.addEventListener('submit', (event) => {
     date: time,
     comment: event.target.comment.value,
   };
-  comments.unshift(newUserComment);
+  
   event.target.fullName.value = ""
   event.target.comment.value = ""
 
+  comments.unshift(newUserComment)
 
   displayComments(comments)
-
 })

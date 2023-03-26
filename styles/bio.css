@@ -446,6 +446,7 @@ html, body {
   height: 2.25rem;
   border-radius: 4px;
   border: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
 }
 .comments__newComment {
   height: 4rem;
