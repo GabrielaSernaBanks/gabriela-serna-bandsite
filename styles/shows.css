@@ -318,6 +318,12 @@ html, body {
   font-family: "avenir";
   font-size: 1.75rem;
 }
+@media screen and (min-width: 1280px) {
+  .shows__title {
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .shows {
     display: flex;
@@ -354,15 +360,31 @@ html, body {
     display: flex;
   }
 }
+@media screen and (min-width: 1280px) {
+  .shows__headings-container {
+    padding-left: 12rem;
+  }
+}
 .shows__headings-container--shown {
   display: flex;
   justify-content: flex-start;
-  padding: 0 60px;
+  justify-content: space-around;
+  padding: 0 3.625rem;
   margin: 0;
   font-family: "avenir";
   font-size: 0.75rem;
   font-weight: 600;
   color: #AFAFAF;
+}
+@media screen and (min-width: 1280px) {
+  .shows__headings-container--shown {
+    padding: 0 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows__list {
+    padding-left: 10rem;
+  }
 }
 .shows__date-info {
   font-weight: 700;

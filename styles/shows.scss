@@ -100,6 +100,11 @@
   &__title {
     font-family: 'avenir';
     font-size: 1.75rem;
+
+    @include desktop{
+      padding-left: 2rem;
+      padding-top: 1rem;
+    }
   }
 
     @include tablet {
@@ -135,18 +140,32 @@
     @include tablet {
       display: flex;
     }
+
+    @include desktop{
+      padding-left: 12rem;
+    }
   }
 
   &__headings-container--shown{
     display: flex;
     justify-content: flex-start;
-    padding: 0 60px;
+    justify-content: space-around;
+    padding: 0 3.625rem;
     margin: 0;
     font-family: 'avenir';
     font-size: .75rem;
     font-weight: 600;
     color: $primary-color-silver;
 
+    @include desktop{
+      padding: 0 5rem;
+    }
+  }
+
+  &__list{
+    @include desktop{
+      padding-left: 10rem;
+    }
   }
 
   &__date-info {
