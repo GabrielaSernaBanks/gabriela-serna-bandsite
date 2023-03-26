@@ -5,7 +5,7 @@
 
 .hero {
   background-image: url(../assets/Images/hero-bio.jpg);
-  height: 15.5rem;
+  height: 15.1rem;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -18,10 +18,9 @@
 
   &__opacity {
     position: absolute;
-    // top: 4.25rem;
     left: 0;
     width: 100%;
-    height: 15.6875rem;
+    height: 15.1rem;
     z-index: 1;
     background: rgba(0,0,0,.5);
 
@@ -64,7 +63,8 @@
     }
 
   &__image {
-    width: 100%;
+    // width: 100%;
+    height: 11.875rem;
 
     @include desktop {
       width: 80%;
@@ -186,13 +186,14 @@
   flex-direction: column;
   padding-left: 0.5rem;
 
-
   &__header {
     font-size: 1.8rem;
     font-family: 'avenir';
   }
+
   &__container {
     display: flex;
+    border-bottom: 1px solid $secondary-color-mercury;
   }
   
   //need to add avatar placeholder with color-mercury
@@ -208,6 +209,7 @@
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: .625rem;
     width: 90%;
     margin: 0;
   }
@@ -245,24 +247,45 @@
   }
 }
 
+
 .userComments {
-  display: flex;
+  // display: flex;
+  padding: 1rem;
+  font-family: 'avenir';
+  font-size: .8125rem;
 
   &__image {
-    background-color: gray;
+    background-color: $secondary-color-mercury;
     height:2.25rem;
     width:2.25rem;
     border-radius:50%;
-    // vertical-align: middle;
   }
 
   &__info {
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 1px solid $secondary-color-mercury;
+
+  }
+  
+  &__details {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__name {
+    font-weight: bold;
+    padding: 0rem .625rem;
+  }
+
+  &__date {
+    padding-left: 3.75rem;
+    color: $primary-color-silver;
   }
 
   &__detail {
-    display: flex;
+    padding-left: 3.125rem;
+    margin: 0 auto;
   }
 }
 

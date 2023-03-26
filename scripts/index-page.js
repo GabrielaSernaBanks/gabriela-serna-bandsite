@@ -16,13 +16,14 @@ let comments=[
 }
 ]; 
 
+//renders the comments on the bio page//
 const commentContainer = document.getElementById('comment__container')
 
 function displayComments(comments){
   for(i=0; i<comments.length; i++){
 
     const userInfo = document.createElement ('div');
-    userInfo.classList.add('userComment__info');
+    userInfo.classList.add('userComments__info');
 
     const image = document.createElement ('div');
     image.classList.add('userComments__image');
@@ -31,17 +32,17 @@ function displayComments(comments){
     details.classList.add('userComments__details');
 
     const name = document.createElement ('p');
-    name.classList.add('userComment__name');
+    name.classList.add('userComments__name');
     name.innerText = comments[i].name;
 
     const date = document.createElement ('p');
-    date.classList.add('userComment__date');
+    date.classList.add('userComments__date');
     date.innerText = comments[i].date;
     details.appendChild(date);
     details.appendChild(name);
 
     const comment = document.createElement ('p');
-    comment.classList.add('userComment__detail');
+    comment.classList.add('userComments__detail');
     comment.innerText = comments[i].comment;
 
     userInfo.appendChild(image);
@@ -50,12 +51,28 @@ function displayComments(comments){
 
     commentContainer.appendChild(userInfo);
 
+
   }
 }
 
 displayComments(comments)
 
 
-
+//creates new comments in the bio page//
 const form = document.querySelector('.comments__form');
-form.
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let time = new Date().toLocaleDateString();
+  let newUserComment = {
+    name: event.target.fullName.value,
+    date: time,
+    comment: event.target.comment.value,
+  };
+  comments.unshift(newUserComment);
+  event.target.fullName.value = ""
+  event.target.comment.value = ""
+
+
+  displayComments(comments)
+
+})
