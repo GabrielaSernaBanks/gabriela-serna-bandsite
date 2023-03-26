@@ -12,8 +12,9 @@
   background-repeat: no-repeat;
   display: flex;
 
+
   @include tablet {
-    height: 40rem;
+    height: 35rem;
   }
 
   &__opacity {
@@ -29,15 +30,13 @@
 
 
     @include tablet{
-      // top: 2.6875rem;
-      height: 40rem;
+      height: 35rem;
     }
 
     @include desktop {
       display: flex;
       flex-direction: row;
       align-items: center;
-      // top: 3.4375rem;
       height: 40.0625rem;
     }
   }
@@ -55,9 +54,24 @@
         padding-right: 32rem;
       }
 
-  // &__soundcloud{
-  //   // padding-right: 60rem;  
-  //   }
+  &__soundcloud{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    position: relative; 
+    }
+  }
+
+  .soundcloud_player {
+    margin: 0 auto;
+    display: flex;
+    width: 87%;
+    border-radius: 5px;
   }
 
   &__title {
@@ -71,8 +85,7 @@
     
     @include tablet {
       font-size: 4rem;
-      // padding-top: 18.75rem;
-      // padding-left: 1.875rem;
+      margin-left: -1rem;
     }
   }
 
@@ -80,9 +93,11 @@
     color: $primary-color-white;
     font-family: 'avenir';
     font-weight: 400;
+    margin-top: -25px;
 
     @include tablet {
       font-size: 2rem;
+      margin-left: -1rem;
     }
   }
 }
@@ -100,6 +115,7 @@
   &__title {
     font-family: 'avenir';
     font-size: 1.75rem;
+    padding-left: 2rem;
 
     @include desktop{
       padding-left: 2rem;
@@ -188,3 +204,8 @@
     }
     }
 }
+
+.get {
+  margin-left: -.1rem;
+}
+

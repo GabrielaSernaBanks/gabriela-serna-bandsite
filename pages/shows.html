@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +14,12 @@
 <body>
   <header>
     <nav class="nav">
-      <a class="nav__logo" href="#"><img class="nav__logo-image" src="../assets/Logo/Logo-bandsite.svg" alt="logo for Bandsite"></a>
+      <a class="nav__logo" href="#"><img class="nav__logo-image" src="../assets/Logo/Logo-bandsite.svg"
+          alt="logo for Bandsite"></a>
       <div class="nav__links">
-        <a class="nav__link nav__link--selected" href="../index.html">Biography</a>
-        <a class="nav__link" href="./shows.html">Shows</a>
-        </div>
+        <a class="nav__link inactive" href="../index.html">Biography</a>
+        <a class="nav__link active" href="./shows.html">Shows</a>
+      </div>
     </nav>
   </header>
 
@@ -28,20 +30,52 @@
         <h1 class="hero__title">Queen of Yellow x For the Stings</h1>
       </div>
       <div class="hero__soundcloud">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113884782;&amp;">
-        </iframe>
-    </div>
+        <iframe 
+        width="100%" 
+        height="120" 
+        scrolling="no" 
+        frameborder="no" 
+        allow="autoplay"
+        class="soundcloud_player"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/696688521&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
+        <!-- <div
+          style="font-size: 10px; 
+          color: #cccccc;
+          line-break: anywhere;
+          word-break: normal;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; 
+          font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+          font-weight: 100;">
+            <a href="https://soundcloud.com/thomasfan3004" 
+            title="ThomasFan3004" 
+            target="_blank"
+            style="color: #cccccc; 
+            text-decoration: none;">
+            ThomasFan3004</a>
+            · 
+            <a
+              href="https://soundcloud.com/thomasfan3004/sets/bear-in-the-big-blue-house-instrumentals"
+              title="Bear in the Big Blue House - Instrumentals" 
+              target="_blank"
+              style="color: #cccccc; 
+              text-decoration: none;">
+              Bear in the Big Blue House - Instrumentals</a> -->
+          </div>
+      </div>
   </section>
 
   <section class="shows">
-      <h2 class="shows__title">Shows</h2>
-      <div class="shows__headings-container">
-        <p class="shows__headings-container--shown">DATE</p>
-        <p class="shows__headings-container--shown">VENUE</p>
-        <p class="shows__headings-container--shown">LOCATION</p>
+    <h2 class="shows__title">Shows</h2>
+    <div class="shows__headings-container">
+      <p class="shows__headings-container--shown">DATE</p>
+      <p class="shows__headings-container--shown">VENUE</p>
+      <p class="shows__headings-container--shown">LOCATION</p>
     </div>
 
-      <div id="shows__list" class="shows__list">
+    <div id="shows__list" class="shows__list">
       <!-- <div class="shows__container">
         <div id="date-container" class="shows__date">
           <p id="date-header" class="shows__subheading">DATE</p>
@@ -62,13 +96,14 @@
 
   <footer class="footer">
     <div class="footer__info">
-      <h2 class="title">Get in Touch</h2>
+      <h2 class="title get">Get in Touch</h2>
       <div class="footer__socials">
         <img class="footer__social" src="../assets/Icons/SVG/Icon-instagram.svg" alt="Instagram icon">
-        <img class="footer__social"  src="../assets/Icons/SVG/Icon-facebook.svg" alt="Facebook icon">
-        <img class="footer__social"  src="../assets/Icons/SVG/Icon-twitter.svg" alt="Twitter icon">
+        <img class="footer__social" src="../assets/Icons/SVG/Icon-facebook.svg" alt="Facebook icon">
+        <img class="footer__social" src="../assets/Icons/SVG/Icon-twitter.svg" alt="Twitter icon">
       </div>
-      <a href="#"><img class="footer__copyright-image footer__copyright-image--visible-tabletdesktop" src="./assets/Logo/Logo-bandsite.svg" alt="logo for Bandsite"></a>
+      <a href="#"><img class="footer__copyright-image footer__copyright-image--visible-tabletdesktop"
+          src="./assets/Logo/Logo-bandsite.svg" alt="logo for Bandsite"></a>
     </div>
 
     <div class="footer__contacts">
@@ -92,10 +127,12 @@
         <p class="footer__contact-info">cwhyte@archentertainment.com</p>
       </div>
     </div>
-    <a href="#"><img class="footer__copyright-image footer__copyright-image--visible-mobile" src="../assets/Logo/Logo-bandsite.svg" alt="logo for Bandsite"></a>
+    <a href="#"><img class="footer__copyright-image footer__copyright-image--visible-mobile"
+        src="../assets/Logo/Logo-bandsite.svg" alt="logo for Bandsite"></a>
     <p class="footer__copyright-info">Copyright The Bees Knees © 2021 All Rights Reserved</p>
 
   </footer>
 
 </body>
+
 </html>

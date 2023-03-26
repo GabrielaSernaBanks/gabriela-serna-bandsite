@@ -15,6 +15,7 @@ html, body {
 
     @include tablet {
       font-size: 2.25rem;
+      margin-left: 1.75rem;
     }
 
     @include desktop {
@@ -31,6 +32,7 @@ html, body {
 
     @include tablet {
       flex-direction: row;
+      padding-left: 2rem;
     }
 
     @include desktop {
@@ -42,6 +44,7 @@ html, body {
 
     @include tablet {
       padding: 1.125rem;
+      padding-right: 2rem;
     }
 
     @include desktop {
@@ -74,12 +77,11 @@ html, body {
     text-decoration: none;
     
     @include tablet {
-      width: 10%;
+      width: fit-content;
       justify-content: unset;
       align-items: center;
       font-size: 0.8rem;
-      padding: 1.25rem;
-      padding-left: 1.875rem;
+      padding: 1.5rem;
     }
 
     @include desktop {
@@ -88,12 +90,16 @@ html, body {
       padding: 1rem;
     }
   }
-
-  &__link--selected {
-    color: #FFFFFF;
-    text-decoration: none;
-  }
 }
+
+.active {
+  line-height: 166%;
+  border-bottom: 4px solid white;
+
+  @include tablet {
+    line-height: 250%;
+  }
+  }
 
 
 
@@ -114,6 +120,7 @@ html, body {
 
       @include tablet {
         flex-direction: row;
+        margin-left: 1.85rem;
       }
 
       @include desktop {
@@ -149,6 +156,7 @@ html, body {
       @include tablet {
         display: flex;
         flex-direction: row;
+        margin-left: -9rem;
       }
 
       @include desktop {
@@ -172,7 +180,7 @@ html, body {
   }
 
   &__contact-info--bold {
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
   }
 
@@ -209,6 +217,7 @@ html, body {
 
       @include tablet {
         padding-left: .625rem;
+        margin-left: 1.5rem;
       }
 
       @include desktop {
