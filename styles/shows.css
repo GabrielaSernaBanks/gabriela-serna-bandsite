@@ -257,13 +257,26 @@ html, body {
 }
 @media screen and (min-width: 1280px) {
   .hero__opacity {
-    top: 3.4375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 40.0625rem;
   }
 }
 .hero__header-container {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__header-container {
+    padding: 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__header-container {
+    padding-right: 32rem;
+  }
 }
 .hero__title {
   font-family: "avenir";
@@ -289,16 +302,17 @@ html, body {
     font-size: 2rem;
   }
 }
-.hero__tracklist {
-  width: 90%;
-  padding: 0.125rem;
-}
 
 .shows {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   font-family: "avenir";
+}
+@media screen and (min-width: 1280px) {
+  .shows {
+    display: flex;
+  }
 }
 .shows__title {
   font-family: "avenir";
@@ -344,6 +358,7 @@ html, body {
   display: flex;
   justify-content: flex-start;
   padding: 0 60px;
+  margin: 0;
   font-family: "avenir";
   font-size: 0.75rem;
   font-weight: 600;

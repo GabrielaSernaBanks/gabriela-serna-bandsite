@@ -34,7 +34,10 @@
     }
 
     @include desktop {
-      top: 3.4375rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // top: 3.4375rem;
       height: 40.0625rem;
     }
   }
@@ -42,6 +45,19 @@
   &__header-container {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+
+      @include tablet{
+        padding: 4rem;
+      }
+
+      @include desktop{
+        padding-right: 32rem;
+      }
+
+  // &__soundcloud{
+  //   // padding-right: 60rem;  
+  //   }
   }
 
   &__title {
@@ -69,11 +85,6 @@
       font-size: 2rem;
     }
   }
-
-  &__tracklist {
-    width: 90%;
-    padding: .125rem;
-  }
 }
 
 .shows {
@@ -81,6 +92,10 @@
   flex-direction: column;
   padding: 1rem;
   font-family: 'avenir';
+
+  @include desktop{
+    display: flex;
+    }
 
   &__title {
     font-family: 'avenir';
@@ -126,6 +141,7 @@
     display: flex;
     justify-content: flex-start;
     padding: 0 60px;
+    margin: 0;
     font-family: 'avenir';
     font-size: .75rem;
     font-weight: 600;
