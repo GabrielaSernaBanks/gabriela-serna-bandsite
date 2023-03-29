@@ -1,4 +1,18 @@
-//array of objects to be displayed on shows page
+const baseURL = 'https://project-1-api.herokuapp.com/';
+
+const APIKey = 'e91fbd20-51eb-4b90-a65e-32a687a7e98d';
+
+axios 
+  .get(baseURL + '/comments/?api_key=e91fbd20-51eb-4b90-a65e-32a687a7e98d')
+  .then((response) => {
+    console.log(response.data);
+  }
+
+  )
+
+
+
+
 const shows=[
   {
   date: "Mon Sept 06 2021",
