@@ -1,22 +1,25 @@
-const baseURL = 'https://project-1-api.herokuapp.com/';
+const baseURL = 'https://project-1-api.herokuapp.com';
 
 const APIKey = 'e91fbd20-51eb-4b90-a65e-32a687a7e98d';
 
-axios 
-  .get(baseURL + '/comments/?api_key=e91fbd20-51eb-4b90-a65e-32a687a7e98d')
-  .then((response) => {
-    console.log(response.data);
-  }
+const showInfoDates = [];
+  axios 
+  .get(baseURL + '/showdates/?api_key=e91fbd20-51eb-4b90-a65e-32a687a7e98d')
+  .then((result) => {
+    showsList.push(...result.data);
+    displayShowInfo(showsList);
+    // console.log(response.data);
+  })
 
-  )
-
-
+  .catch((error) => {
+    console.log(error);
+  })
 
 
 const shows=[
   {
   date: "Mon Sept 06 2021",
-  venue: "Ronald Lane1", 
+  venue: "Ronald Lane1",  
   location: "San Francisco, CA"
 },
 {
@@ -43,7 +46,7 @@ const shows=[
   date: "Wed Dec 15 2021  ",
   venue: "Press Club", 
   location: "San Francisco, CA"
-},
+}
 ];  
 
 //display for shows in correct elements
