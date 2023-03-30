@@ -15,6 +15,18 @@ axios
     console.log(error);
   })
 
+axios 
+  .post('/comments/?api_key=e91fbd20-51eb-4b90-a65e-32a687a7e98d')
+  .then((newComment) => {
+    displayComments(newComment.data);
+    form.reset();
+  })
+    .catch((error) => {
+      console.error('error: ',error);
+    });
+
+    )
+
 
 // const shows=[
 //   {
