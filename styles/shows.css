@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "avenir", Arial, Helvetica, sans-serif;
 }
 
 .title {
@@ -245,17 +246,17 @@ html, body {
 }
 
 @font-face {
-  font-family: "avenir";
+  font-family: "avenir", Arial, Helvetica, sans-serif;
   src: url(assets/Fonts/AvenirNextLTPro-Regular.otf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "avenir";
+  font-family: "avenir", Arial, Helvetica, sans-serif;
   src: url(assets/Fonts/AvenirNextLTPro-Demi.otf);
   font-weight: 600;
 }
 @font-face {
-  font-family: "avenir";
+  font-family: "avenir", Arial, Helvetica, sans-serif;
   src: url(assets/Fonts/AvenirNextLTPro-Bold.otf);
   font-weight: 700;
 }

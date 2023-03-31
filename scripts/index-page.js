@@ -3,40 +3,19 @@ const baseURL = 'https://project-1-api.herokuapp.com';
 const APIKey = 'e91fbd20-51eb-4b90-a65e-32a687a7e98d';
 
 const commentsArray = [];
+  //get request to API for comments
   axios 
-  .get(baseURL + '/comments/?api_key=e91fbd20-51eb-4b90-a65e-32a687a7e98d')
+  .get(baseURL + `/comments/?api_key=${APIKey}`)
   .then((response) => {
     commentsArray.push(...response.data);
     displayComments(commentsArray);
-    // console.log(response.data);
-  })
+    })
 
   .catch((error) => {
     console.log(error);
   })
 
-
-
-//array of objects to be displayed on shows page
-
-let comments=[
-  {
-  name: "Connor Walton",
-  date: "02/17/2021", 
-  comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
-},
-{
-  name: "Emilie Beach",
-  date: "01/09/2021", 
-  comment: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."
-},
-{
-  name: "Miles Acosta",
-  date: "12/20/2020", 
-  comment: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough."
-}
-]; 
-
+  // const date = new Date(timestamp);
 
 //create the comments on the bio page//
 const commentContainer = document.getElementById('comment__container')
@@ -59,7 +38,9 @@ function displayComments(array){
 
     const date = document.createElement ('p');
     date.classList.add('userComments__date');
-    date.innerText = array[i].date;
+    const epoch = array[i].timestamp;
+    const fullDate = new Date(epoch).toLocaleDateString()
+    date.innerText = fullDate;
     details.appendChild(date);
     details.appendChild(name);
 
@@ -75,23 +56,38 @@ function displayComments(array){
   }
 }
 
-displayComments(comments)
 
 //creates new comments in the bio page//
 const form = document.querySelector('.comments__form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  let time = new Date().toLocaleDateString();
+
+  // let time = new Date().toLocaleDateString();
   let newUserComment = {
-    name: event.target.fullName.value,
-    date: time,
-    comment: event.target.comment.value,
+    "name": event.target.fullName.value,
+    // "timestamp": time,
+    "comment": event.target.comment.value,
   };
-  
-  event.target.fullName.value = ""
-  event.target.comment.value = ""
 
-  comments.unshift(newUserComment)
+  // event.target.fullName.value = ""
+  // event.target.comment.value = ""
 
-  displayComments(comments)
-})
+  // const formEl = document.getElementById('postComment');
+  // formEl.addEventListener('submit', newPostHandler);
+
+  axios 
+  .post(baseURL + `/comments/?api_key=${APIKey}`, newUserComment)
+  .then((response) => {
+    commentsArray.unshift(response.data);
+    displayComments(commentsArray);
+    console.log(displayComments);
+    form.reset();
+  })
+    .catch((error) => {
+      console.error('error: ',error);
+    });
+  });
+
+
+
+  // displayComments(comments)
