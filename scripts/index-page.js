@@ -8,7 +8,8 @@ const commentsArray = [];
   .get(baseURL + `/comments/?api_key=${APIKey}`)
   .then((response) => {
     commentsArray.push(...response.data);
-    displayComments(commentsArray);
+    const reversedArray = [...commentsArray].reverse();
+    displayComments(reversedArray);
     })
 
   .catch((error) => {
