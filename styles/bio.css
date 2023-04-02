@@ -616,6 +616,9 @@ html, body {
     margin-left: 15.5rem;
   }
 }
+.comments__button:hover {
+  cursor: pointer;
+}
 
 .userComments {
   padding: 1rem;

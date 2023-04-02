@@ -76,8 +76,9 @@ form.addEventListener('submit', (event) => {
   axios 
   .post(baseURL + `/comments/?api_key=${APIKey}`, newUserComment)
   .then((response) => {
-    commentsArray.unshift(response.data);
-    displayComments(commentsArray);
+    commentsArray.push(response.data);
+    const reversedArray = [...commentsArray].reverse();
+    displayComments(reversedArray);
     form.reset();
   })
     .catch((error) => {
