@@ -77,7 +77,6 @@ form.addEventListener('submit', (event) => {
   .then((response) => {
     commentsArray.unshift(response.data);
     displayComments(commentsArray);
-    console.log(displayComments);
     form.reset();
   })
     .catch((error) => {

@@ -69,7 +69,9 @@ function displayShowInfo(shows) {
   
     const dateInfo = document.createElement ('p');
     dateInfo.classList.add('shows__date-info');
-    dateInfo.innerText = shows[i].date;
+    const epochShows = shows[i].date;
+    const showDate = new Date(epochShows).toLocaleDateString();
+    dateInfo.innerText = showDate;
     datesContainer.appendChild(dateHeader);
     datesContainer.appendChild(dateInfo);
   
