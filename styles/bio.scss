@@ -22,12 +22,11 @@
 
   &__opacity {
     position: absolute;
-    left: 0;
+    // left: 0;
     width: 100%;
-    height: 15.1rem;
+    height: 15rem;
     z-index: 1;
     background: rgba(0,0,0,.5);
-
 
     @include tablet{
       // top: 3.6875rem;
@@ -38,11 +37,10 @@
       top: 4.95rem;
       height: 40rem;
     }
-
   }
 
   &__title {
-    font-family: 'avenir';
+    // font-family: 'avenir';
     padding-top: 6.875rem;
     padding-left: 1rem;
     color: $primary-color-white;
@@ -64,8 +62,8 @@
 }
 
 .bio {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
+  // padding-right: 1rem;
 
     @include tablet {
       padding: 1.5rem 1rem 1rem 1rem;
@@ -95,7 +93,6 @@
       width: 100%;
       height: 20rem;
       margin: 0 auto;
-
     }
 
     @include desktop {
@@ -107,7 +104,6 @@
   &__quote {
     display: flex;
     flex-wrap: wrap;
-    font-family: 'avenir';
     font-size: .875rem;
     font-weight: 600;
     line-height: 1.375rem;
@@ -148,7 +144,7 @@
   }
 
   &__band-title {
-    font-family: 'avenir';
+    // font-family: 'avenir';
     font-size: 1rem;
     font-weight: 500;
     margin: 0;
@@ -168,14 +164,13 @@
   }
   
   &__band-description {
-    font-family: 'avenir';
+    // font-family: 'avenir';
     font-size: 1rem;
     line-height: 1.375rem;
 
     @include tablet {
       font-size: .875rem;
       line-height: 1.375rem;
-      padding-right: 1.5rem;
       padding-right: 1.5rem;
       margin-top: 0rem;
     }
@@ -236,7 +231,6 @@
   }
 }
 
-
 .comments {
   display: flex;
   flex-direction: column;
@@ -245,7 +239,6 @@
 
   &__header {
     font-size: 1.8rem;
-    font-family: 'avenir';
 
     @include tablet{
       padding-left: 1rem;
@@ -257,7 +250,6 @@
       margin-left: 4rem;
     }
   }
-
 
   &__container {
     display: flex;
@@ -307,7 +299,6 @@
   }
 
   &__title {
-    font-family: 'avenir';
     font-size: .75rem;
     font-weight: 600;
     color: $primary-color-silver;    
@@ -366,7 +357,6 @@
 
 .userComments {
   padding: 1rem;
-  font-family: 'avenir';
   font-size: .8125rem;
 
   @include tablet{
@@ -386,9 +376,6 @@
       display: flex;
       flex-direction: column;
     }
-
-    @include desktop{
-    }
   }
 
   &__image {
@@ -396,21 +383,18 @@
     height:2.25rem;
     width:2.25rem;
     border-radius:50%;
-    margin-top: 1.5rem;
 
     @include tablet {
       margin-top: 1rem;
       width: 3rem;
       height: 3rem;
     }
-
-    @include desktop{
-    }
   }
 
   &__info {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 1rem;
     border-bottom: 1px solid $secondary-color-mercury;
 
     @include tablet {
@@ -428,7 +412,10 @@
   &__details {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    padding-left: 0;
 
     @include tablet {
       width: 90%;
@@ -448,8 +435,8 @@
 
   &__name {
     font-weight: bold;
-    padding: 0rem .625rem;
-    margin-bottom: 0;
+    padding-left: 1rem;
+    margin: 0;
 
     @include tablet {
       margin-left: -1rem;
@@ -462,7 +449,6 @@
   }
 
   &__date {
-    padding-left: 3.75rem;
     color: $primary-color-silver;
 
     @include tablet{
@@ -477,8 +463,6 @@
   }
 
   &__detail {
-    padding-left: 3.125rem;
-    margin-top: 0;
 
     @include tablet{
       padding-right: 1rem;

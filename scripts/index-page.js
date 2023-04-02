@@ -15,7 +15,6 @@ const commentsArray = [];
     console.log(error);
   })
 
-  // const date = new Date(timestamp);
 
 //create the comments on the bio page//
 const commentContainer = document.getElementById('comment__container')
@@ -62,10 +61,8 @@ const form = document.querySelector('.comments__form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  // let time = new Date().toLocaleDateString();
   let newUserComment = {
     "name": event.target.fullName.value,
-    // "timestamp": time,
     "comment": event.target.comment.value,
   };
 
