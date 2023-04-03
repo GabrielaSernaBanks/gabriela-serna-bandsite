@@ -6,7 +6,6 @@ html, body {
 }
 
 .title {
-  font-family: "avenir";
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -97,8 +96,9 @@ html, body {
 }
 
 .active {
-  line-height: 166%;
-  border-bottom: 4px solid white;
+  line-height: 155%;
+  font-weight: 500;
+  border-bottom: 4px solid #FFFFFF;
 }
 @media screen and (min-width: 768px) {
   .active {
@@ -111,10 +111,13 @@ html, body {
   }
 }
 
+.inactive {
+  color: #E1E1E1;
+}
+
 .footer {
   background-color: #323232;
   color: #FFFFFF;
-  font-family: "avenir";
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.625rem;
@@ -164,7 +167,7 @@ html, body {
   }
 }
 .footer__social {
-  padding-left: 1.25rem;
+  height: 1.5rem;
   padding-right: 1.25rem;
 }
 .footer__contacts {
@@ -187,7 +190,7 @@ html, body {
 }
 .footer__contact {
   margin: 0;
-  padding: 0 0.625rem;
+  padding: 0 0.2rem;
 }
 @media screen and (min-width: 1280px) {
   .footer__contact {
@@ -203,20 +206,23 @@ html, body {
   margin: 0;
 }
 .footer__copyright-image {
-  padding-left: 0.625rem;
+  padding-left: 0.2rem;
+}
+.footer__copyright-image--visible-mobile {
+  padding-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright-image--visible-mobile {
-    visibility: hidden;
+    display: none;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__copyright-image--visible-mobile {
-    visibility: hidden;
+    display: none;
   }
 }
 .footer__copyright-image--visible-tabletdesktop {
-  visibility: hidden;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright-image--visible-tabletdesktop {
@@ -229,9 +235,8 @@ html, body {
   }
 }
 .footer__copyright-info {
-  font-family: "avenir";
   font-size: 0.6875rem;
-  padding-left: 0.625rem;
+  padding-left: 0.2rem;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright-info {

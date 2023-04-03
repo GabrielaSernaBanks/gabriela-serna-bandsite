@@ -10,7 +10,6 @@ html, body {
 }
 
 .title {
-  font-family: 'avenir';
   font-weight: 600;
   font-size: 1.5rem;
 
@@ -95,8 +94,9 @@ html, body {
 }
 
 .active {
-  line-height: 166%;
-  border-bottom: 4px solid white;
+  line-height: 155%;
+  font-weight: 500;
+  border-bottom: 4px solid $primary-color-white;
 
   @include tablet {
     line-height: 250%;
@@ -105,13 +105,17 @@ html, body {
   @include desktop{
     line-height: 350%;
   }
-  }
+}
+
+.inactive {
+  color: $secondary-color-mercury;
+}
 
 
 .footer {
   background-color: $primary-color-black;
   color: $primary-color-white;
-  font-family: 'avenir';
+  // font-family: 'avenir';
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: .625rem;
@@ -159,7 +163,7 @@ html, body {
   }
 
   &__social {
-    padding-left: 1.25rem;
+    height: 1.5rem;
     padding-right: 1.25rem;
   }
 
@@ -182,7 +186,7 @@ html, body {
 
   &__contact {
     margin: 0;
-    padding: 0 .625rem;
+    padding: 0 .2rem;
 
       @include desktop {
         padding: 0 3.125rem;
@@ -200,21 +204,22 @@ html, body {
   }
 
   &__copyright-image {  
-    padding-left: .625rem;
+    padding-left: .2rem;
   }
 
   &__copyright-image--visible-mobile {
+      padding-top: 2rem;
       @include tablet {
-        visibility: hidden    
+        display: none;    
       }
 
       @include desktop {
-        visibility: hidden    
+        display: none;    
       }
     } 
 
   &__copyright-image--visible-tabletdesktop {
-    visibility: hidden;
+      display: none;    
 
       @include tablet {
         visibility: visible;
@@ -225,9 +230,8 @@ html, body {
       }
   }
   &__copyright-info {
-    font-family: 'avenir';
     font-size: .6875rem;
-    padding-left: .625rem;
+    padding-left: .2rem;
 
       @include tablet {
         padding-left: .625rem;
