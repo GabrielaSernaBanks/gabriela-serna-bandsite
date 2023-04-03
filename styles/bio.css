@@ -72,7 +72,6 @@ html, body {
   justify-content: space-around;
   color: #FFFFFF;
   width: 100%;
-  font-family: "avenir";
   font-weight: 400;
   font-size: 1.125rem;
   text-decoration: none;
@@ -83,7 +82,7 @@ html, body {
     width: fit-content;
     justify-content: unset;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 1.5rem;
   }
 }
@@ -102,7 +101,7 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .active {
-    line-height: 250%;
+    line-height: 175%;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -159,6 +158,7 @@ html, body {
   .footer__socials {
     display: flex;
     flex-direction: row;
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -226,7 +226,7 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .footer__copyright-image--visible-tabletdesktop {
-    visibility: visible;
+    display: inline;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -331,13 +331,16 @@ html, body {
     padding: 1.5rem 1rem 1rem 1rem;
   }
 }
+.bio__details {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
 @media screen and (min-width: 768px) {
   .bio__details {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    margin-top: -5rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -625,6 +628,11 @@ html, body {
   cursor: pointer;
 }
 
+input:focus {
+  outline: none;
+  border-color: #323232;
+}
+
 .userComments {
   padding: 1rem;
   font-size: 0.8125rem;
@@ -639,7 +647,6 @@ html, body {
 @media screen and (min-width: 1280px) {
   .userComments {
     width: 35%;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -656,7 +663,6 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .userComments__image {
-    margin-top: 1rem;
     width: 3rem;
     height: 3rem;
   }
@@ -669,8 +675,8 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .userComments__info {
+    padding-left: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -692,7 +698,7 @@ html, body {
   .userComments__details {
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: -3rem;
   }
@@ -700,8 +706,7 @@ html, body {
 @media screen and (min-width: 1280px) {
   .userComments__details {
     display: flex;
-    width: 95%;
-    margin-top: -3rem;
+    width: 87%;
   }
 }
 .userComments__name {
@@ -709,14 +714,8 @@ html, body {
   padding-left: 1rem;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
-  .userComments__name {
-    margin-left: -1rem;
-  }
-}
 @media screen and (min-width: 1280px) {
   .userComments__name {
-    margin-top: -3rem;
     margin-right: -12rem;
   }
 }
@@ -727,12 +726,6 @@ html, body {
   .userComments__date {
     padding-left: 1rem;
     margin-left: 15rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .userComments__date {
-    margin-top: -3rem;
-    margin-right: -3.5rem;
   }
 }
 .userComments__detail {

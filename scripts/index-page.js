@@ -16,7 +16,6 @@ const commentsArray = [];
     console.log(error);
   })
 
-
 //create the comments on the bio page//
 const commentContainer = document.getElementById('comment__container')
 function displayComments(array){
@@ -56,7 +55,6 @@ function displayComments(array){
   }
 }
 
-
 //creates new comments in the bio page//
 const form = document.querySelector('.comments__form');
 form.addEventListener('submit', (event) => {
@@ -66,12 +64,6 @@ form.addEventListener('submit', (event) => {
     "name": event.target.fullName.value,
     "comment": event.target.comment.value,
   };
-
-  // event.target.fullName.value = ""
-  // event.target.comment.value = ""
-
-  // const formEl = document.getElementById('postComment');
-  // formEl.addEventListener('submit', newPostHandler);
 
   axios 
   .post(baseURL + `/comments/?api_key=${APIKey}`, newUserComment)
@@ -87,5 +79,31 @@ form.addEventListener('submit', (event) => {
   });
 
 
+// const commentsForm = document.querySelector(".comments__form");
+// const firstName = document.querySelector(".comments__fullName");
+// const lastName = document.querySelector(".comments__newComment");
 
-  // displayComments(comments)
+// commentsForm.addEventListener("submit", submitComment);
+
+// function submitComment(e) {
+//   e.preventDefault();
+
+//   const firstNameInput = firstName.value;
+//   const lastNameInput = lastName.value;
+//   const commentInput = comment.value;
+
+//   if (firstNameInput ==="") {
+//     firstName.style.border = "2px solid #D22D2D";
+//     return false;
+//   }
+
+//   if (lastNameInput ==="") {
+//     lastName.style.border = "2px solid #D22D2D";
+//     return false;
+//   }
+
+//   if (commentInput ==="") {
+//     comment.style.border = "2px solid #D22D2D";
+//     return false;
+//   }
+// }

@@ -72,7 +72,6 @@ html, body {
     justify-content: space-around;
     color: $primary-color-white;
     width: 100%;
-    font-family: 'avenir';
     font-weight: 400;
     font-size: 1.125rem;
     text-decoration: none;
@@ -81,7 +80,7 @@ html, body {
       width: fit-content;
       justify-content: unset;
       align-items: center;
-      font-size: 0.8rem;
+      font-size: 1rem;
       padding: 1.5rem;
     }
 
@@ -99,7 +98,7 @@ html, body {
   border-bottom: 4px solid $primary-color-white;
 
   @include tablet {
-    line-height: 250%;
+    line-height: 175%;
   }
 
   @include desktop{
@@ -115,7 +114,6 @@ html, body {
 .footer {
   background-color: $primary-color-black;
   color: $primary-color-white;
-  // font-family: 'avenir';
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: .625rem;
@@ -155,6 +153,7 @@ html, body {
       @include tablet {
       display: flex;
       flex-direction: row;
+      padding-left: 1rem;
       }
 
       @include desktop {
@@ -209,6 +208,7 @@ html, body {
 
   &__copyright-image--visible-mobile {
       padding-top: 2rem;
+
       @include tablet {
         display: none;    
       }
@@ -222,13 +222,14 @@ html, body {
       display: none;    
 
       @include tablet {
-        visibility: visible;
+        display: inline;
       }
 
       @include desktop{
         padding-left: 31.25rem;
       }
   }
+
   &__copyright-info {
     font-size: .6875rem;
     padding-left: .2rem;

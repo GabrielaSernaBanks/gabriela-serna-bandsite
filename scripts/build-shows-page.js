@@ -34,7 +34,13 @@ function displayShowInfo(shows) {
     const dateInfo = document.createElement ('p');
     dateInfo.classList.add('shows__date-info');
     const epochShows = shows[i].date;
-    const showDate = new Date(epochShows).toLocaleDateString();
+    const options = {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    }
+    const showDate = new Date(epochShows).toLocaleDateString("en-CA", options).replace(/,/g,'');
     dateInfo.innerText = showDate;
     datesContainer.appendChild(dateHeader);
     datesContainer.appendChild(dateInfo);
