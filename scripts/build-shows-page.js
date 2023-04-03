@@ -100,6 +100,20 @@ Array.from(showContainer).forEach(function(el) {
     let showBackground = e.currentTarget;
     //once one of the showContainers is 'clicked' then the class "selected" is toggled 'on/off'
     showBackground.classList.toggle("selected")
-  })});
+  })
+
+  el.addEventListener("mouseover", (e) => {
+    let showBackground = e.currentTarget;
+    showBackground.classList.add("selected-hover");
+  });
+
+  el.addEventListener("mouseout", (e) => {
+    let showBackground = e.currentTarget;
+    showBackground.classList.remove("selected-hover");
+  });
+});
+
+
+
 
 

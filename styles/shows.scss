@@ -16,10 +16,6 @@
       height: 35rem;
     }
 
-    @include desktop{
-      height: 35rem;
-    }
-
   &__opacity {
     display: flex;
     flex-direction: column;
@@ -38,7 +34,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 35rem;
         justify-content: space-between;
       }
   }
@@ -88,13 +83,11 @@
     }
 
   @include desktop{
-    width: 65%;
     margin-right: 15rem;
     }
   }
 
   &__title {
-    font-family: 'avenir';
     padding-top: 6.875rem;
     padding-left: 1rem;
     color: white;
@@ -110,7 +103,6 @@
 
   &__album-title {
     color: $primary-color-white;
-    font-family: 'avenir';
     font-weight: 400;
     margin-top: -25px;
 
@@ -125,14 +117,12 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  font-family: 'avenir';
 
   @include desktop{
     display: flex;
     }
 
   &__title {
-    font-family: 'avenir';
     font-size: 1.75rem;
     padding-left: 2rem;
 
@@ -163,13 +153,12 @@
   }
 
   &__subheading {
-    font-family: 'avenir';
     font-size: .75rem;
     font-weight: 600;
     color: $primary-color-silver;
 
       @include tablet{
-        visibility: hidden;
+        display: none;
       }
   }
 
